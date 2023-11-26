@@ -34,7 +34,7 @@ export default function Project({
       className="group mb-3 sm:mb-8 last:mb-0 flow-root"
     > 
     
-      <Link href={ projectLink } target="_blank"> link </Link>
+      { projectLink === "" ? <></> : <Link href={ projectLink } target="_blank"> link </Link>}
 
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 
       right-0">
