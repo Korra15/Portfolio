@@ -78,16 +78,11 @@ export const experiencesData = [
     title: "Game Programmer",
     company: "Nodding Heads Games",
     location: "Pune, India",
-    description:""
-    //   " Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Exploring and experimenting with UEFN, various console .
-    //   3. Working with the animation and
-    //   technical animation teams to deliver a
-    //   best-in-class animation system for AAA
-    //   games and get
-    //   involved in foundational architectural
-    //   decisions and implementation.",
-    // icon: React.createElement(IoGameController),
-    // date: "2023 - present",
+    description:
+      "Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Working with the various teams to deliver best-in-class game mechanics for AAA games. Exploring, experimenting with UEFN, developing on various platforms, receiving mentorship from seniors is a delightful experience.",
+      // getting involved in foundational architectural decisions 
+    icon: React.createElement(IoGameController),
+    date: "2023 - present",
   },
 ] as const;
 
@@ -96,7 +91,7 @@ export const projectsData = [
     title: "Unreal Engine Exploration",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["Unreal Engine 5", "Blueprints", "C++", "Mixamoś", "Prisma"],
     imageUrl: corpcommentImg,
     projectLink: ""
   },
@@ -145,30 +140,36 @@ export const projectsData = [
 export const skillsData = [
   "Game Development",
   "Unreal Engine",
-  "C++",
+  "C/C++",
   "Unity",
   "C#",
+  "Unreal Engine for Fortnite",
   "Python",
+  "Django",
+  "MongoDB",
+  "MySQL",
   "JavaScript",
-  "CSS",
   "TypeScript",
+  "CSS",
+  "Tailwind",
   "React",
   "Next.js",
+  "Vue.js",
   "Node.js",
   "Git",
-  "Tailwind",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Django",
-  "Framer Motion",
+  "Linux",
+  "AWS",
+  "Google Cloud",
+  "Figma",
 ] as const;
 
 export const abilityData = [
   "Time Management",
   "Leadership",
-  "Communication"
+  "Communication",
+  "Problem Solving",
+  "Project Management",
+  "Creative",
+  "Inquisitive",
 ] as const;
