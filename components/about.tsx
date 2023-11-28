@@ -37,6 +37,10 @@ export default function About() {
       </p>
 
       <p>
+      I am Ayushi Parikh, a Btech student majoring in Computer science and engineering at MIT ADT University. Computers have always fascinated me, how some tiny chips can compute such complex computations in just a few seconds. This fascination is what ignited my passion towards Games and Artificial intelligence. How a small idea can be shaped into something so engrossing and informative, a single line of code turned into something life-changing. Playing sports namely football, karate is what helps me keep my brain active, alongwith travelling and exploring that help me connect to the world. Blogging about my experiences and adventures is my way of giving back to the community. 
+      </p>
+
+      <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
         video games, watching movies, and playing with my dog. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently

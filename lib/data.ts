@@ -1,6 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { SiEpicgames } from "react-icons/si";
+import { IoGameController } from "react-icons/io5";
+import { SiUnrealengine } from "react-icons/si";
+import { PiDesktopTowerDuotone } from "react-icons/pi";
+
+
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -28,14 +32,15 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: "Triumphs",
+    hash: "#triumphs",
   },
 ] as const;
 
 export const experiencesData = [
   {
     title: "Graduation",
+    company: "MIT ADT University",
     location: "Pune, India",
     description:
       "I completed my bachelors from MIT ADT University ranking 3rd in Bachelor of Technology Computer Science and Engineering - Intelligent Systems  .",
@@ -43,34 +48,52 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Front-End Developer",
+    title: "Game Developer",
+    company: "Strall Pvt. Ltd.",
     location: "Mumbai, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Gameplay functionality programmer collaborating with a team to develop a Team-Death-Match and Battle Royale multiplayer game. I also overlooked the server management and android build generation",
+    icon: React.createElement(PiDesktopTowerDuotone),
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Lead Game Developer",
+    company: "Flege",
     location: "Dubai, UAE",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Team lead and Sole programmer of a metaverse workshop combine with an immersive experience simulating the Dubai real estate market using unreal engine for a multiplayer game adventure using AWS services to deploy and manage gameplay functionalities. ",
+    icon: React.createElement(IoGameController),
+    date: "May|2023 - Aug|2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Pune, India",
+    title: "Women Creators Program - UEFN",
+    company: "Epic Games",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Epic games with support from Dancing Atoms Studios, AWS for Games, Women in Games International and Green Rain had organized a 5-week extensive training course mentoring 100 creatives from across multiple regions on building and publishing cross-platform experiences in UEFN. Thrilling experience teaming up and working with women across the globe to construct wonderfous Fortnite islands.",
+    icon: React.createElement(SiEpicgames),
+    date: "Sep|2023 - Oct|2023",
+  },
+  {
+    title: "Game Programmer",
+    company: "Nodding Heads Games",
+    location: "Pune, India",
+    description:""
+    //   " Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Exploring and experimenting with UEFN, various console .
+    //   3. Working with the animation and
+    //   technical animation teams to deliver a
+    //   best-in-class animation system for AAA
+    //   games and get
+    //   involved in foundational architectural
+    //   decisions and implementation.",
+    // icon: React.createElement(IoGameController),
+    // date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Unreal Engine Exploration",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
@@ -78,7 +101,7 @@ export const projectsData = [
     projectLink: ""
   },
   {
-    title: "rmtDev",
+    title: "TimeTest",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
@@ -93,26 +116,59 @@ export const projectsData = [
     imageUrl: wordanalyticsImg,
     projectLink: ""
   },
+  {
+    title: "CorpComment",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: corpcommentImg,
+    projectLink: ""
+  },
+  {
+    title: "CorpComment",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: corpcommentImg,
+    projectLink: ""
+  },
+  {
+    title: "CorpComment",
+    description:
+      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: corpcommentImg,
+    projectLink: ""
+  },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Game Development",
+  "Unreal Engine",
+  "C++",
+  "Unity",
+  "C#",
+  "Python",
   "JavaScript",
+  "CSS",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
   "MongoDB",
   "Redux",
   "GraphQL",
   "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
   "Django",
   "Framer Motion",
+] as const;
+
+export const abilityData = [
+  "Time Management",
+  "Leadership",
+  "Communication"
 ] as const;

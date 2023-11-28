@@ -37,7 +37,7 @@ export default function Experience() {
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
               date={item.date}
-              icon={item.icon}
+              icon = { item.company === "Nodding Heads Games" ? NHGlogo() : item.icon}
               iconStyle={{
                 background:
                   theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
@@ -45,6 +45,7 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
+              <h4 className="font-normal"> {item.company}</h4>
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
@@ -55,4 +56,8 @@ export default function Experience() {
       </VerticalTimeline>
     </section>
   );
+}
+
+function NHGlogo(){
+ return <img src='./NHG.png' alt="Logo" className="h-[3.25rem] w-[3.25rem] pl-3 pt-2" />;
 }
