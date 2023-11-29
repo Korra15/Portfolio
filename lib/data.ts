@@ -1,14 +1,19 @@
 import React from "react";
 import { SiEpicgames } from "react-icons/si";
 import { IoGameController } from "react-icons/io5";
-import { SiUnrealengine } from "react-icons/si";
 import { PiDesktopTowerDuotone } from "react-icons/pi";
-
-
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+
+
+
+import InterviewReady from "@/public/InterviewReady.jpg";
+import TimeTest from "@/public/TimeTest.png"
+import PeopleAnalyzer from "@/public/PeopleAnalyzer.png"
+import ADiTiBot from "@/public/ADiTiBot.png"
+import BlogBot from "@/public/BlogBot.jpg";
+import GameDoora from "@/public/GameDoora.png";
+import CareOnWheels from "@/public/CareOnWheels.png";
+import SeaEye from "@/public/SeaEye.png";
 
 export const links = [
   {
@@ -90,60 +95,106 @@ export const projectsData = [
   {
     title: "Unreal Engine Exploration",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["Unreal Engine 5", "Blueprints", "C++", "Mixamoś", "Prisma"],
-    imageUrl: corpcommentImg,
-    projectLink: ""
+      " A 2 level game ",
+    tags: ["Unreal Engine 5", "Blueprints", "C++"],
+    imageUrl: InterviewReady,
+    projectLink: "",
+    detail: ""
   },
   {
     title: "TimeTest",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    projectLink: ""
+      "My first game developerd for game jam titans under the theme time. A 2D ",
+    tags: ["GameMaker Studio"],
+    imageUrl: TimeTest,
+    projectLink: "",
+    detail: ""
   },
   {
-    title: "Word Analytics",
+    title: "People Analyzer",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations and aid player to communicate with others of different personalities.",
+    tags: ["Unity", "C#", "Android Studio", "Flask", "k-means algoithm"],
+    imageUrl: PeopleAnalyzer,
+    projectLink: "",
+    detail: ""
+  },
+  {
+    title: "Game Mechanics + AI",
+    description:
+      "",
+    tags: ["Unreal Enigine", "Blueprints", "C++"],
+    imageUrl:  InterviewReady,
+    projectLink: "",
+    detail: ""
+  },
+  {
+    title: "Gamedoora",
+    description:
+      "First every studio-as-a-service. A platform to create, connect and collaborate with people across the globe to develop awe-inspiring games the open source way.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    projectLink: ""
+    imageUrl: GameDoora,
+    projectLink: "",
+    detail: ""
   },
   {
-    title: "CorpComment",
+    title: "ADiTi Chatbot",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    projectLink: ""
+      "Lifelike conversational AI developed to aid parents and students answer all queries related to the university.",
+    tags: ["Google Dialogflow", "Node.js", "Express", "Ngrok"],
+    imageUrl: ADiTiBot,
+    projectLink: "",
+    detail: ""
   },
   {
-    title: "CorpComment",
+    title: "Care on Wheels",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    projectLink: ""
+      "a voice controlled bot aimed to ease the patients dependency on the medical staff, providing regular vital check-ups and easily available first-aid.",
+    tags: ["Arduino", "Vue.js", "Tableau", "Google Dialogflow", "Tailwind"],
+    imageUrl: CareOnWheels,
+    projectLink: "",
+    detail: ""
   },
   {
-    title: "CorpComment",
+    title: "Blogbot",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    projectLink: ""
+      "An application to answer queries related to the pandemic situation, vaccine status, chat with a web-scrapping, self-learnign bot, along with an automatic sanitizer dispenser and temperature sensor.",
+    tags: ["Flask", "Arduino", "NLTK", "ScikitLearn", "Numpy", "Newspaper3K"],
+    imageUrl: BlogBot,
+    projectLink: "",
+    detail: ""
   },
+  {
+    title: "SeaEye",
+    description:
+      "Deep learnign based underwater object detection model to identify and classify multiple types of underwater objects, increase awareness regarding the deteriorating underwater ecosystem and provide marine surveillance.",
+    tags: ["Google Colab", "Roboflow"],
+    imageUrl: SeaEye,
+    projectLink: "",
+    detail: "A multidisciplinary project, An underwater object detection model build to speedily and accurately identify multiple types of underwater objects along with classifying them into various categories, increase awareness regarding the deteriorating underwater ecosystem conditions and provide marine surveillanc."
+  },
+  {
+    title: "Interview Ready",
+    description:
+      "An android application that tests the users ability in aptitude, logical reasoning, mathematical reasoning, data structures and algorithms through quizes to help users with their interview preperation",
+    tags: ["Java", "Android Studio", "Firebase", "Lottie"],
+    imageUrl: InterviewReady,
+    projectLink: "",
+    detail: "A one stop solution for interview preperations. An application that leverages the power of java to build a robust solution aiding aspirants prepare for the next leap in thier carrier "
+  },
+  
 ] as const;
 
 export const skillsData = [
   "Game Development",
   "Unreal Engine",
-  "C/C++",
   "Unity",
-  "C#",
   "Unreal Engine for Fortnite",
+  "GameMaker",
+  "Machine Learning",
+  "Artificial Intelligence",
+  "C/C++",
+  "C#",
   "Python",
   "Django",
   "MongoDB",
@@ -172,4 +223,5 @@ export const abilityData = [
   "Project Management",
   "Creative",
   "Inquisitive",
+  "Open Source Contribution",
 ] as const;

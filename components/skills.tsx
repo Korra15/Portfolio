@@ -21,6 +21,21 @@ const fadeInAnimationVariants = {
   }),
 };
 
+// const fadeInAnimationAfter = {
+//   initial: {
+//     opacity: 0,
+//     y: 100,
+//   },
+//   animate: (index: number) => ({
+//     opacity: 1,
+//     y: 0,
+//     delay: 5.0,
+//     transition: {
+//       delay: 0.05 * index,
+//     },
+//   }),
+// };
+
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
@@ -34,7 +49,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 drop-shadow	shadow-cyan-500/50"
+            className="bg-white borderBlack rounded-xl px-5 py-3 shadow-sm shadow-gray-500 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -49,10 +64,10 @@ export default function Skills() {
         ))}
       </ul>
 
-      {/* <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 mt-[0.5rem]">
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 mt-[0.5rem]">
         {abilityData.map((ability, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 "
+            className="bg-white borderBlack rounded-xl px-5 py-3 shadow-sm shadow-green-500 dark:bg-white/10 dark:text-white/80 "
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -65,7 +80,7 @@ export default function Skills() {
             {ability}
           </motion.li>
         ))}
-      </ul> */}
+      </ul>
     </section>
   );
 }
