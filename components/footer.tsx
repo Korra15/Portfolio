@@ -7,9 +7,9 @@ export default function Footer() {
         &copy; 2030 Ayushi. All rights reserved.
       </small> */}
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
+        {/* <span className="font-semibold">About this website:</span> built with */}
+        This website is built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
+        Framer Motion, Vercel hosting.
       </p>
     </footer>
   );

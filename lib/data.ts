@@ -3,8 +3,12 @@ import { SiEpicgames } from "react-icons/si";
 import { IoGameController } from "react-icons/io5";
 import { PiDesktopTowerDuotone } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
+import { RiGamepadFill } from "react-icons/ri";
+
 
 import InterviewReady from "@/public/InterviewReady.jpg";
+import Game from "@/public/Game.png";
+import AI1 from "@/public/AI1.png";
 import TimeTest from "@/public/TimeTest.png"
 import PeopleAnalyzer from "@/public/PeopleAnalyzer.png"
 import ADiTiBot from "@/public/ADiTiBot.png"
@@ -48,27 +52,40 @@ export const experiencesData = [
     company: "MIT ADT University",
     location: "Pune, India",
     description:
-      "I completed my bachelors from MIT ADT University ranking 3rd in Bachelor of Technology Computer Science and Engineering - Intelligent Systems  .",
+      "I completed my bachelors from MIT ADT University ranking 3rd in Bachelor of Technology Computer Science and Engineering - Intelligent Systems.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
+    link: "https://mituniversity.ac.in/",
+  },
+  {
+    title: "Unreal Developer",
+    company: "Eastern Royal Company",
+    location: "Pune, India",
+    description:
+      "Developed realistic 3D virtual tour games for university campuses, as a free roam exploration game allowing the user to wander around these locations grasping their essense in an interactive and engaging way. Also part of the team to create an adventure game named 'Local Streets'.",
+    icon: React.createElement(RiGamepadFill),
+    date: "Jan|2022 - Oct|2023",
+    link: "https://www.youtube.com/channel/UCSNTRYL01WOflaOiMI6mHCA",
   },
   {
     title: "Game Developer",
     company: "Strall Pvt. Ltd.",
     location: "Mumbai, India",
     description:
-      "Gameplay functionality programmer collaborating with a team to develop a Team-Death-Match and Battle Royale multiplayer game. I also overlooked the server management and android build generation",
+      "Gameplay functionality programmer collaborating with a team to develop a Team-Death-Match and Battle Royale multiplayer game. I also overlooked the server management and android build generation.",
     icon: React.createElement(PiDesktopTowerDuotone),
     date: "2022 - 2023",
+    link: "https://www.linkedin.com/company/strall-pvt-ltd/about/",
   },
   {
     title: "Lead Game Developer",
     company: "Flege",
     location: "Dubai, UAE",
     description:
-      "Team lead and Sole programmer of a metaverse workshop combine with an immersive experience simulating the Dubai real estate market using unreal engine for a multiplayer game adventure using AWS services to deploy and manage gameplay functionalities. ",
+      "Team lead and Sole programmer of a metaverse workshop combine with an immersive experience simulating the Dubai real estate market using unreal engine for a multiplayer game adventure using AWS services to deploy and manage gameplay functionalities.",
     icon: React.createElement(IoGameController),
     date: "May|2023 - Aug|2023",
+    link: "https://flege.co/",
   },
   {
     title: "Women Creators Program - UEFN",
@@ -78,6 +95,7 @@ export const experiencesData = [
       "Epic games with support from Dancing Atoms Studios, AWS for Games, Women in Games International and Green Rain had organized a 5-week extensive training course mentoring 100 creatives from across multiple regions on building and publishing cross-platform experiences in UEFN. Thrilling experience teaming up and working with women across the globe to construct wonderfous Fortnite islands.",
     icon: React.createElement(SiEpicgames),
     date: "Sep|2023 - Oct|2023",
+    link: "https://www.unrealengine.com/en-US/events/women-creators-program-2023",
   },
   {
     title: "Game Programmer",
@@ -88,23 +106,24 @@ export const experiencesData = [
       // getting involved in foundational architectural decisions 
     icon: React.createElement(IoGameController),
     date: "2023 - present",
+    link: "https://www.noddingheadsgames.com/",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Unreal Engine Exploration",
+    title: "Puzzle Shooter",
     description:
       " A 2 level game ",
     tags: ["Unreal Engine 5", "Blueprints", "C++"],
-    imageUrl: InterviewReady,
-    projectLink: "",
+    imageUrl: Game,
+    projectLink: "https://youtu.be/ZkF977oFx_g",
     detail: ""
   },
   {
     title: "TimeTest",
     description:
-      "My first game developerd for game jam titans under the theme time. A 2D ",
+      "My first game developerd for game jam titans under the theme time. A 2D action maze chase",
     tags: ["GameMaker Studio"],
     imageUrl: TimeTest,
     projectLink: "",
@@ -113,19 +132,19 @@ export const projectsData = [
   {
     title: "People Analyzer",
     description:
-      "A ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations and aid player to communicate with others of different personalities.",
-    tags: ["Unity", "C#", "Android Studio", "Flask", "k-means algoithm"],
+      "A ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
+    tags: ["Unity", "C#", "Android Studio", "Flask", "Mixamo"],
     imageUrl: PeopleAnalyzer,
-    projectLink: "",
+    projectLink: "https://youtu.be/HM0yv-m3DS0",
     detail: ""
   },
   {
     title: "Game Mechanics + AI",
     description:
-      "",
+      "Unreal engine exploration project. Includes simple enemy AI behviour, gameplay mechanics like character gliding, swimming, jump height multiplyer, elevator logic.",
     tags: ["Unreal Enigine", "Blueprints", "C++"],
-    imageUrl:  InterviewReady,
-    projectLink: "",
+    imageUrl: AI1,
+    projectLink: "https://youtu.be/g8KDFuvY5sw",
     detail: ""
   },
   {
@@ -134,7 +153,7 @@ export const projectsData = [
       "First every studio-as-a-service. A platform to create, connect and collaborate with people across the globe to develop awe-inspiring games the open source way.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: GameDoora,
-    projectLink: "",
+    projectLink: "http://gamedoora.com/",
     detail: ""
   },
   {
@@ -149,19 +168,19 @@ export const projectsData = [
   {
     title: "Care on Wheels",
     description:
-      "a voice controlled bot aimed to ease the patients dependency on the medical staff, providing regular vital check-ups and easily available first-aid.",
+      "A voice controlled bot aimed to ease the patients dependency on the medical staff, providing regular vital check-ups and easily available first-aid.",
     tags: ["Arduino", "Vue.js", "Tableau", "Google Dialogflow", "Tailwind"],
     imageUrl: CareOnWheels,
-    projectLink: "",
+    projectLink: "https://devfolio.co/projects/care-on-wheels-c011",
     detail: ""
   },
   {
     title: "Blogbot",
     description:
-      "An application to answer queries related to the pandemic situation, vaccine status, chat with a web-scrapping, self-learnign bot, along with an automatic sanitizer dispenser and temperature sensor.",
+      "A chatbot app to answer queries related to the pandemic situation, vaccine status using web-scrapping, self-learnign, along with an automatic sanitizer dispenser and temperature sensor.",
     tags: ["Flask", "Arduino", "NLTK", "ScikitLearn", "Numpy", "Newspaper3K"],
     imageUrl: BlogBot,
-    projectLink: "",
+    projectLink: "https://devfolio.co/projects/blog-bot-3e68",
     detail: ""
   },
   {
@@ -195,6 +214,7 @@ export const skillsData = [
   "Artificial Intelligence",
   "C/C++",
   "C#",
+  "Verse",
   "Python",
   "Django",
   "MongoDB",
@@ -216,12 +236,12 @@ export const skillsData = [
 ] as const;
 
 export const abilityData = [
-  "Time Management",
   "Leadership",
   "Communication",
   "Problem Solving",
   "Project Management",
+  "Time Management",
   "Creative",
   "Inquisitive",
-  "Open Source Contribution",
+  // "Open Source Contribution",
 ] as const;

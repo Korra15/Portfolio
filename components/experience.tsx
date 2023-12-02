@@ -11,6 +11,9 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.25);
   const { theme } = useTheme();
@@ -49,6 +52,7 @@ export default function Experience() {
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
+                <a href={item.link} target="_blank" className=""> <FaExternalLinkAlt className="text-blue-500 ml-[25rem]"/> </a>
               </p>
             </VerticalTimelineElement>
           </React.Fragment>

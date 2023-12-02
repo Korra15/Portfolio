@@ -19,7 +19,7 @@ import { FaUniversity } from "react-icons/fa";
 
 
 export default function Triumphs() {
-    const { ref } = useSectionInView("Triumphs");
+    const { ref } = useSectionInView("Triumphs",0.25);
 
   return (
     <motion.section
@@ -43,16 +43,16 @@ export default function Triumphs() {
       <h2 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> publications :</h2>
       <ul className="list-image-none list-outside mr-2 ml-5">
         <li> <IoNewspaper className="inline"/> Published a paper <a href="https://ieeexplore.ieee.org/document/10112371" className="font-bold underline text-blue-500" target="_blank"> Exploration of Deep Learning Based Underwater Image Processing Techniques </a> under Conference on Computing for Sustainable Global Development (INDIACom23). </li>
-        <li> <IoNewspaper className="inline"/> Published a research paper for our project <a href="https://ieeexplore.ieee.org/document/10037307" className="font-bold underline" target="_blank"> People Analyzer</a> in International Conference on Data, Decision and System (ICDDS22). We have also filled an Indian Patent for the same.</li>
-        <li> <IoNewspaper className="inline"/> Published a paper named <a href="https://www.irjet.net/archives/V8/i10/IRJET-V8I10208.pdf" className="font-bold underline" target="_blank"> Interview Ready: Quiz Application for Aptitude</a> in International Research Journal of Engineering and Technology. </li>
+        <li> <IoNewspaper className="inline"/> Published a research paper for our project <a href="https://ieeexplore.ieee.org/document/10037307" className="font-bold underline text-blue-500" target="_blank"> People Analyzer</a> in International Conference on Data, Decision and System (ICDDS22). We have also filled an Indian Patent for the same.</li>
+        <li> <IoNewspaper className="inline"/> Published a paper named <a href="https://www.irjet.net/archives/V8/i10/IRJET-V8I10208.pdf" className="font-bold underline text-blue-500" target="_blank"> Interview Ready: Quiz Application for Aptitude</a> in International Research Journal of Engineering and Technology. </li>
         <li> <IoNewspaper className="inline"/> Published a provisional patent name "Project 2D blueprints into real world 3D plans using Hologram Home".</li>
       </ul>
 
       <h2 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> Contributions & Competitions :</h2>
       <ul className="list-image-none list-outside mr-2 ml-5">
-        <li> <FaGitAlt className="inline"/> Pround contributor in <a href="https://github.com/gamedoora" className="font-bold underline" target="_blank"> Gamedoora </a> an open source studio-as-a-service platform, revolutionizing the gaming industry.  </li>
-        <li> <FaGitAlt className="inline"/> Cheerful to receive <span className="font-semibold"> Best All Girls Team </span>award for our project {" "} <a href="https://devfolio.co/projects/care-on-wheels-c011" className="font-bold underline" target="_blank">"Care On Wheels", Anytime Anywhere Healthcare</a> in Codebreak 3.0 hackathon. </li>
-        <li> <FaGitAlt className="inline"/> Delighted to receive the <span className="font-semibold"> IEEE Student Branch Team </span> award for our project {" "}<a href="https://devfolio.co/projects/blog-bot-3e68" className="font-bold underline" target="_blank">"BlogBot", a complete corona virus kit</a> in Codebreak 2.0. </li>
+        <li> <FaGitAlt className="inline"/> Pround contributor in <a href="https://github.com/gamedoora" className="font-bold underline text-blue-500" target="_blank"> Gamedoora </a> an open source studio-as-a-service platform, revolutionizing the gaming industry.  </li>
+        <li> <FaGitAlt className="inline"/> Cheerful to receive <span className="font-semibold"> Best All Girls Team </span>award for our project {" "} <a href="https://devfolio.co/projects/care-on-wheels-c011" className="font-bold underline text-blue-500" target="_blank">"Care On Wheels", Anytime Anywhere Healthcare</a> in Codebreak 3.0 hackathon. </li>
+        <li> <FaGitAlt className="inline"/> Delighted to receive the <span className="font-semibold"> IEEE Student Branch Team </span> award for our project {" "}<a href="https://devfolio.co/projects/blog-bot-3e68" className="underline text-blue-500" target="_blank">"BlogBot", a complete corona virus kit</a> in Codebreak 2.0. </li>
         <li> <FaGitAlt className="inline"/> Participated in Google coding competitions Hash Code and Kiskstart.</li>
         <li> <FaGitAlt className="inline"/> Contributed in multiple open source projects under various hackathons.</li>
       </ul>
@@ -70,6 +70,8 @@ export default function Triumphs() {
         </li>
 
         <li> <FaUniversity className="inline"/> Contributed as a social media team member for IEEE Women in Engineering MIT-ADT and am enthusiastically volunteering to coordinate and manage various events organized by the group. </li>
+        <li> <FaUniversity className="inline" /> President of the Gamedevelopment and Metaverse community in the university.
+        </li>
 
       </ul>
 
@@ -91,6 +93,7 @@ export default function Triumphs() {
       <ul className="list-image-none list-outside mr-2 ml-5">
         <li> <BiSolidGame className="inline"/> Attended the Indian Game Developer Conference (IGDC) 2023 as a part of team Nodding Heads Games. </li>
         <li> <BiSolidGame className="inline"/> Participated in the YUVA: Prime Minister’s Scheme for Mentoring Young Authors. </li>
+        <li> <BiSolidGame className="inline"/> Volunteered in the organizing committed of multiple college events and fests. </li>
         <li> <BiSolidGame className="inline"/> An outdoor person who loves to venture the wild, conquer mountains and feel through food. </li>
       </ul>
 
