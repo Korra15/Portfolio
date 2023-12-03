@@ -112,6 +112,15 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "TimeTest",
+    description:
+      "My first game developed for game jam titans under the theme 'time'. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
+    tags: ["GameMaker Studio"],
+    imageUrl: TimeTest,
+    projectLink: "https://youtu.be/d7A8eDPak-0",
+    detail: ""
+  },
+  {
     title: "Puzzle Shooter",
     description:
       "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
@@ -121,18 +130,9 @@ export const projectsData = [
     detail: ""
   },
   {
-    title: "TimeTest",
-    description:
-      "My first game developerd for game jam titans under the theme time. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
-    tags: ["GameMaker Studio"],
-    imageUrl: TimeTest,
-    projectLink: "https://youtu.be/d7A8eDPak-0",
-    detail: ""
-  },
-  {
     title: "People Analyzer",
     description:
-      "A ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
+      "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
     tags: ["Unity", "C#", "Android Studio", "Flask", "Mixamo"],
     imageUrl: PeopleAnalyzer,
     projectLink: "https://youtu.be/HM0yv-m3DS0",
@@ -150,8 +150,8 @@ export const projectsData = [
   {
     title: "Gamedoora",
     description:
-      "First every studio-as-a-service. A platform to create, connect and collaborate with people across the globe to develop awe-inspiring games the open source way.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "First ever studio-as-a-service. A platform to create, connect and collaborate with people across the globe to develop awe-inspiring games the open source way.",
+    tags: ["React", "Next.js", "SQL", "Tailwind"],
     imageUrl: GameDoora,
     projectLink: "http://gamedoora.com/",
     detail: ""
