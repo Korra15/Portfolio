@@ -19,6 +19,7 @@ export default function Intro() {
 
 
   return (
+    
     <section 
       ref={ref} 
       id="home" 
@@ -57,9 +58,8 @@ export default function Intro() {
                 strings: [' Game Programmer ', ' Developer', ' Blogger', " Adventurer", " Sport Enthusiast"],
                 autoStart: true,
                 loop: true,
-                delay: 75,
-                pauseFor: 1000,
-                deleteSpeed: 75
+                delay: 45,
+                deleteSpeed: 45,
                 
         }} 
         /> </span>
