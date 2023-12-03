@@ -54,9 +54,13 @@ export default function Intro() {
         <span className="font-bold ">
           <Typewriter 
             options={{
-                strings: [' Game Programmer ', ' Developer', ' Blogger', " Adventurer"],
+                strings: [' Game Programmer ', ' Developer', ' Blogger', " Adventurer", " Sport Enthusiast"],
                 autoStart: true,
                 loop: true,
+                delay: 75,
+                pauseFor: 1000,
+                deleteSpeed: 75
+                
         }} 
         /> </span>
       </motion.h1>
