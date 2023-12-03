@@ -104,7 +104,7 @@ export default function Intro() {
 
         </div>
 
-        <p className='items-center justify-center px-4 text-xl font-medium mt-[1.2rem] ml-[1.2rem]'> You can contact me at <a className='underline' href='mailto:mailayushi15@gmail.com'> mailayushi15@gmail.com</a></p>
+        <p className='items-center justify-center px-4 text-xl font-medium mt-[1.2rem] ml-[1.9rem] sm:flex-row'> Connect with me <GoMail className='inline'/>  <a className='underline' href='mailto:mailayushi15@gmail.com'> mailayushi15@gmail.com</a></p>
 
       </motion.div>
     </section>

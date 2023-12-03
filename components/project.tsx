@@ -40,7 +40,10 @@ export default function Project({
         {/* <FaExternalLinkAlt className="text-blue-500"/> */}
 
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          
+        { projectLink === "" ? RenderTitle(title) : RenderLinkTitle(projectLink, title) } 
+          {/* <h3 className="text-2xl font-semibold">{title}</h3> */}
+
           <p className="mt-2 leading-normal text-gray-700 dark:text-white/70">
             {description}
             {/* {projectLink === "" ? <></>: RenderLink(projectLink) }  */}
@@ -128,4 +131,17 @@ function RenderImg(imageUrl:any){
         group-even:group-hover:rotate-2
 
         group-even:right-[initial] group-even:-left-40" /> 
+ }
+
+ function RenderTitle(title:string){
+  return <h3 className="text-2xl font-semibold">{title}</h3>
+ }
+
+ function RenderLinkTitle(projectLink:string, title:string){
+  return <a href={projectLink} target="_blank">
+    <h3 className="text-2xl font-semibold inline">
+      {title}
+        <FaExternalLinkAlt className="inline text-blue-500 text-sm ml-2 mb-[0.12rem] sm:text-xs"/>  
+    </h3>
+    </a>
  }

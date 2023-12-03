@@ -114,7 +114,7 @@ export const projectsData = [
   {
     title: "Puzzle Shooter",
     description:
-      " A 2 level game ",
+      "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
     tags: ["Unreal Engine 5", "Blueprints", "C++"],
     imageUrl: Game,
     projectLink: "https://youtu.be/ZkF977oFx_g",
@@ -123,10 +123,10 @@ export const projectsData = [
   {
     title: "TimeTest",
     description:
-      "My first game developerd for game jam titans under the theme time. A 2D action maze chase",
+      "My first game developerd for game jam titans under the theme time. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
     tags: ["GameMaker Studio"],
     imageUrl: TimeTest,
-    projectLink: "",
+    projectLink: "https://youtu.be/d7A8eDPak-0",
     detail: ""
   },
   {
@@ -189,7 +189,7 @@ export const projectsData = [
       "Deep learnign based underwater object detection model to identify and classify multiple types of underwater objects, increase awareness regarding the deteriorating underwater ecosystem and provide marine surveillance.",
     tags: ["Google Colab", "Roboflow"],
     imageUrl: SeaEye,
-    projectLink: "",
+    projectLink: "https://ieeexplore.ieee.org/document/10112371",
     detail: "A multidisciplinary project, An underwater object detection model build to speedily and accurately identify multiple types of underwater objects along with classifying them into various categories, increase awareness regarding the deteriorating underwater ecosystem conditions and provide marine surveillanc."
   },
   {
@@ -198,7 +198,7 @@ export const projectsData = [
       "An android application that tests the users ability in aptitude, logical reasoning, mathematical reasoning, data structures and algorithms through quizes to help users with their interview preperation",
     tags: ["Java", "Android Studio", "Firebase", "Lottie"],
     imageUrl: InterviewReady,
-    projectLink: "",
+    projectLink: "https://www.irjet.net/archives/V8/i10/IRJET-V8I10208.pdf",
     detail: "A one stop solution for interview preperations. An application that leverages the power of java to build a robust solution aiding aspirants prepare for the next leap in thier carrier "
   },
   
