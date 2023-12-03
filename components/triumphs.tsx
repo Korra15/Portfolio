@@ -24,13 +24,13 @@ export default function Triumphs() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[60rem] text-justify leading-8 sm:mb-40 scroll-mt-28" 
+      className="mb-16 max-w-[60rem] text-justify leading-8 sm:mb-28 scroll-mt-28" 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="triumphs"
     >
-      <SectionHeading>My Triumphs</SectionHeading>
+      <SectionHeading>Triumphs</SectionHeading>
 
       <h3 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> sports :</h3>
       <ul className="list-image-none list-outside mr-2 ml-5">

@@ -23,7 +23,7 @@ export default function Intro() {
     <section 
       ref={ref} 
       id="home" 
-      className='mb-28 max-w-[80rem] sm:mb-0 scroll-mt-[100rem]' >
+      className='mb-16 max-w-[80rem] sm:mb-0 scroll-mt-[100rem]' >
       
       <div className='flex items-center justify-center'>
         <div className='relative'>
@@ -35,7 +35,7 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image src='/Ayushi_Parikh_TT.jpg' alt='Ayushi Parikh'
+            <Image src='/TT.jpg' alt='Ayushi Parikh'
               width='192' height='192' quality='95' priority={true} 
               className='h-36 w-36 object-cover border-[0.35rem] border-white shadow-xl rounded-full'/> 
               {/* rounded-full */}
