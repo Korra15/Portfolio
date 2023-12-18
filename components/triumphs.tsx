@@ -77,7 +77,7 @@ export default function Triumphs() {
 
       <h2 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> Courses & Workshops :</h2>
       <ul className="list-image-none list-outside mr-2 ml-5">
-        <li> <FaCode className="inline"/> Paticipated in a one week national online workshop - CODETHON on "High Performance Computing" organized by MIT ADT University in association with NVIDIA Deep Learning Institute.</li>
+        <li> <FaCode className="inline"/> Participated in a one week national online workshop - CODETHON on "High Performance Computing" organized by MIT ADT University in association with NVIDIA Deep Learning Institute.</li>
         <li> <FaCode className="inline"/> Was a part of 30 Days of Google Cloud 2021. </li>
         <li> <FaCode className="inline"/> Completed the AWS Acadmy Cloud Foundation and Machine Learnign Foundation courses.</li>
         <li> <FaCode className="inline"/> Completed the Python Specialization offered by The University of Michigan trough coursera.</li>
