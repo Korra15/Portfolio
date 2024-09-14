@@ -105,7 +105,7 @@ export const experiencesData = [
       "Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Working with the various teams to deliver best-in-class game mechanics for AAA games. Exploring, experimenting with UEFN, developing on various platforms, receiving mentorship from seniors is a delightful experience.",
       // getting involved in foundational architectural decisions 
     icon: React.createElement(IoGameController),
-    date: "2023 - present",
+    date: "2023 - 2024",
     link: "https://www.noddingheadsgames.com/",
   },
 ] as const;
