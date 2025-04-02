@@ -102,7 +102,7 @@ export const experiencesData = [
     company: "Nodding Heads Games",
     location: "Pune, India",
     description:
-      "Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Working with the various teams to deliver best-in-class game mechanics for AAA games. Exploring, experimenting with UEFN, developing on various platforms, receiving mentorship from seniors is a delightful experience.",
+      "Ported Raji: An Ancient Epic on PS5. Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Working with the various teams to deliver best-in-class game mechanics for AAA games. Exploring, experimenting with UEFN, developing on various platforms, receiving mentorship from seniors is a delightful experience.",
       // getting involved in foundational architectural decisions 
     icon: React.createElement(IoGameController),
     date: "2023 - present",
