@@ -25,10 +25,6 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
-  },
-  {
     name: "Projects",
     hash: "#projects",
   },
@@ -39,6 +35,10 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "About",
+    hash: "#about",
   },
   {
     name: "Triumphs",

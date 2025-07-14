@@ -12,10 +12,10 @@ export default function Home() {
     px-4">
       <Intro />
       <SectionDivider />
-      <About />
       <Projects />
       <Skills />
       <Experience />
+      <About />
       <Triumphs />
     </main>
   )
