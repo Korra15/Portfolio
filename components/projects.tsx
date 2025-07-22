@@ -3,12 +3,12 @@
 import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/project-data";
-import Project from "./project";
+import ProjectTile from "./project-tile";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.02);
+  const { ref } = useSectionInView("Projects");
   const [activeTab, setActiveTab] = useState<"games" | "other">("games");
 
   // Group projects by category
@@ -68,23 +68,37 @@ export default function Projects() {
       </div>
 
       {/* Projects Content */}
-      <div>
+      <div className="px-8 sm:px-16 lg:px-24 xl:px-32">
         {activeTab === "games" && (
-          <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {gameProjects.map((project, index) => (
-              <React.Fragment key={index}>
-                <Project {...project} />
-              </React.Fragment>
+              <ProjectTile
+                key={index}
+                title={project.title}
+                shortDescription={project.shortDescription}
+                tags={project.tags}
+                imageUrl={project.imageUrl}
+                videoUrl={project.videoUrl}
+                projectLink={project.projectLink}
+                index={index}
+              />
             ))}
           </div>
         )}
         
         {activeTab === "other" && (
-          <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {otherProjects.map((project, index) => (
-              <React.Fragment key={index}>
-                <Project {...project} />
-              </React.Fragment>
+              <ProjectTile
+                key={index}
+                title={project.title}
+                shortDescription={project.shortDescription}
+                tags={project.tags}
+                imageUrl={project.imageUrl}
+                videoUrl={project.videoUrl}
+                projectLink={project.projectLink}
+                index={index}
+              />
             ))}
           </div>
         )}

@@ -63,8 +63,10 @@ export const projectsData = [
     title: "Gamedoora",
     description:
       "First ever studio-as-a-service. A platform to create, connect and collaborate with people across the globe to develop awe-inspiring games the open source way.",
+    shortDescription: "Open-source game development collaboration platform",
     tags: ["React", "Next.js", "SQL", "Tailwind"],
     imageUrl: GameDoora,
+    videoUrl: "",
     projectLink: "http://gamedoora.com/",
     detail: "",
     category: "game"
@@ -73,8 +75,10 @@ export const projectsData = [
     title: "ADiTi Chatbot",
     description:
       "Lifelike conversational AI developed to aid parents and students answer all queries related to the university.",
+    shortDescription: "AI chatbot for university queries and student support",
     tags: ["Google Dialogflow", "Node.js", "Express", "Ngrok"],
     imageUrl: ADiTiBot,
+    videoUrl: "",
     projectLink: "",
     detail: "",
     category: "other"
@@ -83,8 +87,10 @@ export const projectsData = [
     title: "Care on Wheels",
     description:
       "A voice controlled bot aimed to ease the patients dependency on the medical staff, providing regular vital check-ups and easily available first-aid.",
+    shortDescription: "Voice-controlled healthcare bot for patient assistance",
     tags: ["Arduino", "Vue.js", "Tableau", "Google Dialogflow", "Tailwind"],
     imageUrl: CareOnWheels,
+    videoUrl: "",
     projectLink: "https://devfolio.co/projects/care-on-wheels-c011",
     detail: "",
     category: "other"
@@ -93,8 +99,10 @@ export const projectsData = [
     title: "Blogbot",
     description:
       "A chatbot app to answer queries related to the pandemic situation, vaccine status using web-scrapping, self-learnign, along with an automatic sanitizer dispenser and temperature sensor.",
+    shortDescription: "Pandemic info chatbot with automated sanitizer dispenser",
     tags: ["Flask", "Arduino", "NLTK", "ScikitLearn", "Numpy", "Newspaper3K"],
     imageUrl: BlogBot,
+    videoUrl: "",
     projectLink: "https://devfolio.co/projects/blog-bot-3e68",
     detail: "",
     category: "other"
@@ -103,8 +111,10 @@ export const projectsData = [
     title: "SeaEye",
     description:
       "Deep learnign based underwater object detection model to identify and classify multiple types of underwater objects, increase awareness regarding the deteriorating underwater ecosystem and provide marine surveillance.",
+    shortDescription: "AI-powered underwater object detection for marine surveillance",
     tags: ["Google Colab", "Roboflow"],
     imageUrl: SeaEye,
+    videoUrl: "",
     projectLink: "https://ieeexplore.ieee.org/document/10112371",
     detail: "A multidisciplinary project, An underwater object detection model build to speedily and accurately identify multiple types of underwater objects along with classifying them into various categories, increase awareness regarding the deteriorating underwater ecosystem conditions and provide marine surveillanc.",
     category: "other"
@@ -114,8 +124,10 @@ export const projectsData = [
     title: "Interview Ready",
     description:
       "An android application that tests the users ability in aptitude, logical reasoning, mathematical reasoning, data structures and algorithms through quizes to help users with their interview preperation",
+    shortDescription: "Android quiz app for comprehensive interview preparation",
     tags: ["Java", "Android Studio", "Firebase", "Lottie"],
     imageUrl: InterviewReady,
+    videoUrl: "",
     projectLink: "https://www.irjet.net/archives/V8/i10/IRJET-V8I10208.pdf",
     detail: "A one stop solution for interview preperations. An application that leverages the power of java to build a robust solution aiding aspirants prepare for the next leap in thier carrier ",
     category: "other" 
