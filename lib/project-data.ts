@@ -15,8 +15,10 @@ export const projectsData = [
     title: "TimeTest",
     description:
       "My first game developed for game jam titans under the theme 'time'. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
+    shortDescription: "2D maze chase game built against time with treasure hunting mechanics",
     tags: ["GameMaker Studio"],
     imageUrl: TimeTest,
+    videoUrl: "https://youtu.be/d7A8eDPak-0",
     projectLink: "https://youtu.be/d7A8eDPak-0",
     detail: "",
     category: "game",
@@ -25,8 +27,10 @@ export const projectsData = [
     title: "Puzzle Shooter",
     description:
       "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
+    shortDescription: "Strategic FPS puzzle game with 2 challenging levels",
     tags: ["Unreal Engine 5", "Blueprints", "C++"],
     imageUrl: Game,
+    videoUrl: "https://youtu.be/ZkF977oFx_g",
     projectLink: "https://youtu.be/ZkF977oFx_g",
     detail: "",
     category: "game",
@@ -35,8 +39,10 @@ export const projectsData = [
     title: "People Analyzer",
     description:
       "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
+    shortDescription: "VR personality analyzer with AI-driven conversation simulation",
     tags: ["Unity", "C#", "Android Studio", "Flask", "Mixamo"],
     imageUrl: PeopleAnalyzer,
+    videoUrl: "https://youtu.be/HM0yv-m3DS0",
     projectLink: "https://youtu.be/HM0yv-m3DS0",
     detail: "",
     category: "game",
@@ -45,8 +51,10 @@ export const projectsData = [
     title: "Game Mechanics + AI",
     description:
       "Unreal engine exploration project. Includes simple enemy AI behviour, gameplay mechanics like character gliding, swimming, jump height multiplyer, elevator logic.",
+    shortDescription: "Unreal Engine showcase with AI behaviors and game mechanics",
     tags: ["Unreal Enigine", "Blueprints", "C++"],
     imageUrl: AI1,
+    videoUrl: "https://youtu.be/g8KDFuvY5sw",
     projectLink: "https://youtu.be/g8KDFuvY5sw",
     detail: "",
     category: "game"
