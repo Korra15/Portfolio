@@ -55,7 +55,7 @@ export default function Intro() {
         <span className="font-bold ">
           <Typewriter 
             options={{
-                strings: [' Game Programmer ', ' Game Designer ', ' Developer', ' Blogger', " Adventurer", " Sport Enthusiast"],
+                strings: [' Gamer ', ' Game Programmer ', ' Game Designer ', ' Developer', ' Blogger', " Adventurer", " Sport Enthusiast"],
                 autoStart: true,
                 loop: true,
                 delay: 45,
