@@ -43,7 +43,8 @@ export default function Experience() {
               icon = { item.company === "Nodding Heads Games" ? NHGlogo() : item.icon}
               iconStyle={{
                 background:
-                  theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                  //theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
+                   theme === "light" ? "white" : "rgba(31, 41, 55, 0.95)",
                 fontSize: "1.5rem",
               }}
             >
@@ -62,6 +63,19 @@ export default function Experience() {
   );
 }
 
+// function NHGlogo(){
+//  return <img src='./NHG.png' alt="Logo" className="h-[3.25rem] w-[3.25rem] pl-3 pt-2" />;
+// }
+
 function NHGlogo(){
- return <img src='./NHG.png' alt="Logo" className="h-[3.25rem] w-[3.25rem] pl-3 pt-2" />;
+  const { theme } = useTheme();
+  return (
+    <img 
+      src='./NHG.png' 
+      alt="Logo" 
+      className={`h-[3.25rem] w-[3.25rem] pl-3 pt-2 ${
+        theme === "dark" ? "filter invert brightness-0 contrast-100" : ""
+      }`} 
+    />
+  );
 }
