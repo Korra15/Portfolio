@@ -1,4 +1,3 @@
-
 import InterviewReady from "@/public/InterviewReady.jpg";
 import Game from "@/public/Game.png";
 import AI1 from "@/public/AI1.png";
@@ -9,8 +8,11 @@ import BlogBot from "@/public/BlogBot.jpg";
 import GameDoora from "@/public/GameDoora.png";
 import CareOnWheels from "@/public/CareOnWheels.png";
 import SeaEye from "@/public/SeaEye.png";
+import { Project } from "./types";
 
-export const projectsData = [
+export const projectsData: Project[] = [
+
+  // Games
   {
     title: "TimeTest",
     description:
@@ -71,6 +73,25 @@ export const projectsData = [
     detail: "",
     category: "game"
   },
+
+  
+  // Prototypes
+  {
+    title: "Mischief Merchant",
+    description:
+      "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
+    shortDescription: "Strategic FPS puzzle game with 2 challenging levels",
+    tags: ["Unreal Engine 5", "Blueprints", "C++"],
+    imageUrl: Game,
+    videoUrl: "https://youtu.be/ZkF977oFx_g",
+    projectLink: "https://youtu.be/ZkF977oFx_g",
+    detail: "",
+    category: "prototype",
+  },
+
+
+
+  // Other
   {
     title: "ADiTi Chatbot",
     description:
