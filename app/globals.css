@@ -13,3 +13,12 @@ htnl.dark {
 .borderBlack {
     @apply border border-black/10;
 }
+
+/* Prevent flash of unstyled content */
+.project-section {
+  visibility: hidden;
+}
+
+.project-section.loaded {
+  visibility: visible;
+}

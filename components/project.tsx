@@ -12,7 +12,7 @@ type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
-  description,
+  shortDescription,
   tags,
   imageUrl,
   projectLink 
@@ -45,7 +45,7 @@ export default function Project({
           {/* <h3 className="text-2xl font-semibold">{title}</h3> */}
 
           <p className="mt-2 leading-normal text-gray-700 dark:text-white/70">
-            {description}
+            {shortDescription}
             {/* {projectLink === "" ? <></>: RenderLink(projectLink) }  */}
           </p>
           

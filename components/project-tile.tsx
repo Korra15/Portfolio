@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaPlay, FaExternalLinkAlt } from "react-icons/fa";
+import DetailModal from "./detail-modal";
 
 type ProjectTileProps = {
   title: string;
@@ -13,6 +13,8 @@ type ProjectTileProps = {
   videoUrl?: string;
   projectLink?: string;
   index: number;
+  overview?: string; // Changed from description
+  detailedDescription?: string;
 };
 
 export default function ProjectTile({
@@ -23,116 +25,84 @@ export default function ProjectTile({
   videoUrl,
   projectLink,
   index,
+  overview,
+  detailedDescription,
 }: ProjectTileProps) {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handleVideoToggle = () => {
-    if (videoRef.current) {
-      if (isVideoPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsVideoPlaying(!isVideoPlaying);
-    }
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleTileClick = () => {
-    if (projectLink) {
-      window.open(projectLink, '_blank');
-    }
+    setIsModalOpen(true);
   };
 
-  // Convert YouTube URL to embed URL
-  const getYouTubeEmbedUrl = (url: string) => {
-    if (!url) return "";
-    const videoId = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/);
-    return videoId ? `https://www.youtube.com/embed/${videoId[1]}?autoplay=1&mute=1` : "";
+  const projectData = {
+    title,
+    overview: overview || shortDescription,
+    projectLink,
+    videoUrl,
+    tags: Array.from(tags),
+    imageUrl,
+    detailedDescription,
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.25, delay: index * 0.1 }}
-      className="group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 cursor-pointer"
-      onClick={handleTileClick}
-    >
-      {/* Media Section */}
-      <div className="relative h-48 overflow-hidden">
-        {videoUrl && !isVideoPlaying ? (
-          // YouTube thumbnail with play button
-          <div className="relative w-full h-full">
-            <Image
-              src={imageUrl}
-              alt={title}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-            <div 
-              className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              onClick={(e) => {
-                e.stopPropagation();
-                if (videoUrl) {
-                  window.open(videoUrl, '_blank');
-                }
-              }}
-            >
-              <div className="bg-white bg-opacity-90 rounded-full p-3 hover:bg-opacity-100 transition-all duration-200">
-                <FaPlay className="text-gray-800 text-xl ml-1" />
-              </div>
-            </div>
-          </div>
-        ) : (
-          // Regular image
+    <>
+      <motion.div
+        className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 cursor-pointer"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 * index }}
+        onClick={handleTileClick}
+      >
+        {/* Image */}
+        <div className="relative h-48 overflow-hidden">
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
-        )}
-        
-        {/* External link indicator */}
-        {projectLink && (
-          <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <div className="bg-white dark:bg-gray-800 rounded-full p-2 shadow-md">
-              <FaExternalLinkAlt className="text-gray-600 dark:text-gray-300 text-sm" />
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* Content Section */}
-      <div className="p-6">
-        {/* Title */}
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-          {title}
-        </h3>
-
-        {/* Short Description */}
-        <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
-          {shortDescription}
-        </p>
-
-        {/* Skills Footer */}
-        <div className="flex flex-wrap gap-2">
-          {tags.slice(0, 3).map((tag, tagIndex) => (
-            <span
-              key={tagIndex}
-              className="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
-          {tags.length > 3 && (
-            <span className="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full">
-              +{tags.length - 3} more
-            </span>
-          )}
         </div>
-      </div>
-    </motion.div>
+
+        {/* Content */}
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">
+            {title}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 leading-relaxed">
+            {shortDescription}
+          </p>
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            {tags.slice(0, 3).map((tag, tagIndex) => (
+              <span
+                key={tagIndex}
+                className="bg-gray-100 dark:bg-gray-700 px-2 py-1 text-xs rounded-full text-gray-700 dark:text-gray-300"
+              >
+                {tag}
+              </span>
+            ))}
+            {tags.length > 3 && (
+              <span className="bg-gray-100 dark:bg-gray-700 px-2 py-1 text-xs rounded-full text-gray-700 dark:text-gray-300">
+                +{tags.length - 3} more
+              </span>
+            )}
+          </div>
+
+          {/* Call to action */}
+          <div className="mt-4 text-sm text-blue-600 dark:text-blue-400 font-medium">
+            Click to view details →
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Detail Modal */}
+      <DetailModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        data={projectData}
+        type="project"
+      />
+    </>
   );
 }
