@@ -11,8 +11,6 @@ export const otherProjectsData: Project[] = [
     shortDescription: "AI chatbot for university queries and student support",
     tags: ["Google Dialogflow", "Node.js", "Express", "Ngrok"],
     imageUrl: ADiTiBot,
-    videoUrl: "",
-    projectLink: "",
     overview:
       "Lifelike conversational AI developed to aid parents and students answer all queries related to the university.",
     detailedDescription: `• Developed natural language processing for university-specific queries
@@ -29,7 +27,6 @@ export const otherProjectsData: Project[] = [
     shortDescription: "Voice-controlled healthcare bot for patient assistance",
     tags: ["Arduino", "Vue.js", "Tableau", "Google Dialogflow", "Tailwind"],
     imageUrl: CareOnWheels,
-    videoUrl: "",
     projectLink: "https://devfolio.co/projects/care-on-wheels-c011",
     overview:
       "A voice controlled bot aimed to ease the patients dependency on the medical staff, providing regular vital check-ups and easily available first-aid.",
@@ -48,7 +45,6 @@ export const otherProjectsData: Project[] = [
     shortDescription: "Pandemic info chatbot with automated sanitizer dispenser",
     tags: ["Flask", "Arduino", "NLTK", "ScikitLearn", "Numpy", "Newspaper3K"],
     imageUrl: BlogBot,
-    videoUrl: "",
     projectLink: "https://devfolio.co/projects/blog-bot-3e68",
     overview:
       "A chatbot app to answer queries related to the pandemic situation, vaccine status using web-scrapping, self-learnign, along with an automatic sanitizer dispenser and temperature sensor.",
@@ -67,7 +63,6 @@ export const otherProjectsData: Project[] = [
     shortDescription: "AI-powered underwater object detection for marine surveillance",
     tags: ["Google Colab", "Roboflow"],
     imageUrl: SeaEye,
-    videoUrl: "",
     projectLink: "https://ieeexplore.ieee.org/document/10112371",
     overview:
       "Deep learnign based underwater object detection model to identify and classify multiple types of underwater objects, increase awareness regarding the deteriorating underwater ecosystem and provide marine surveillance.",
@@ -86,7 +81,6 @@ export const otherProjectsData: Project[] = [
     shortDescription: "Android quiz app for comprehensive interview preparation",
     tags: ["Java", "Android Studio", "Firebase", "Lottie"],
     imageUrl: InterviewReady,
-    videoUrl: "",
     projectLink: "https://www.irjet.net/archives/V8/i10/IRJET-V8I10208.pdf",
     overview:
       "An android application that tests the users ability in aptitude, logical reasoning, mathematical reasoning, data structures and algorithms through quizes to help users with their interview preperation",
@@ -101,4 +95,4 @@ export const otherProjectsData: Project[] = [
 • Published research paper documenting the application's impact`,
     category: "other" 
   },
-] as const;
+];

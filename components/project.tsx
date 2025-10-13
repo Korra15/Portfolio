@@ -2,13 +2,14 @@
 
 import { useRef } from "react";
 import { projectsData } from "@/lib/project-data";
+import type { Project } from "@/lib/types";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = Project;
 
 export default function Project({
   title,
@@ -41,7 +42,7 @@ export default function Project({
 
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           
-        { projectLink === "" ? RenderTitle(title) : RenderLinkTitle(projectLink, title) } 
+        { !projectLink || projectLink === "" ? RenderTitle(title) : RenderLinkTitle(projectLink, title) } 
           {/* <h3 className="text-2xl font-semibold">{title}</h3> */}
 
           <p className="mt-2 leading-normal text-gray-700 dark:text-white/70">
@@ -63,7 +64,7 @@ export default function Project({
 
         </div>
 
-        { projectLink === "" ? RenderImg(imageUrl) : RenderLinkImg(projectLink, imageUrl) } 
+        { !projectLink || projectLink === "" ? RenderImg(imageUrl) : RenderLinkImg(projectLink, imageUrl) } 
 
 
         {/* <Image

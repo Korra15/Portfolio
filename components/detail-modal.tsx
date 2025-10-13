@@ -17,8 +17,8 @@ type DetailModalProps = {
     overview: string; // Changed from description
     date?: string; // For experiences
     link?: string; // For experiences
-    projectLink?: string; // For projects
-    videoUrl?: string; // For projects
+    projectLink?: string; // For projects - now optional
+    videoUrl?: string; // For projects - now optional
     tags?: string[]; // For projects
     imageUrl?: any; // For projects
     detailedDescription?: string;
@@ -165,7 +165,8 @@ export default function DetailModal({ isOpen, onClose, data, type }: DetailModal
 
                 {/* Action Buttons */}
                 <div className="flex justify-center gap-4">
-                  {linkUrl && (
+                  {/* Only show View Project button if projectLink exists for projects, or link exists for experiences */}
+                  {((isProject && data.projectLink) || (!isProject && data.link)) && (
                     <a
                       href={linkUrl}
                       target="_blank"

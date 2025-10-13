@@ -8,7 +8,6 @@ export const prototypesData: Project[] = [
     tags: ["Unreal Engine 5", "Blueprints", "C++"],
     imageUrl: Game,
     videoUrl: "https://youtu.be/ZkF977oFx_g",
-    projectLink: "https://youtu.be/ZkF977oFx_g",
     overview:
       "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
     detailedDescription: `• Prototype exploring merchant-based gameplay in FPS setting
@@ -19,4 +18,4 @@ export const prototypesData: Project[] = [
 • Tested innovative gameplay concepts and mechanics`,
     category: "prototype",
   },
-] as const;
+];

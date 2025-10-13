@@ -12,7 +12,6 @@ export const gamesData: Project[] = [
     tags: ["GameMaker Studio"],
     imageUrl: TimeTest,
     videoUrl: "https://youtu.be/d7A8eDPak-0",
-    projectLink: "https://youtu.be/d7A8eDPak-0",
     overview:
       "My first game developed for game jam titans under the theme 'time'. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
     detailedDescription: `• Developed for Game Jam Titans with "time" theme constraint
@@ -30,7 +29,6 @@ export const gamesData: Project[] = [
     tags: ["Unreal Engine 5", "Blueprints", "C++"],
     imageUrl: Game,
     videoUrl: "https://youtu.be/ZkF977oFx_g",
-    projectLink: "https://youtu.be/ZkF977oFx_g",
     overview:
       "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
     detailedDescription: `• Designed unique puzzle-shooting mechanics combining FPS with strategy
@@ -48,7 +46,6 @@ export const gamesData: Project[] = [
     tags: ["Unity", "C#", "Android Studio", "Flask", "Mixamo"],
     imageUrl: PeopleAnalyzer,
     videoUrl: "https://youtu.be/HM0yv-m3DS0",
-    projectLink: "https://youtu.be/HM0yv-m3DS0",
     overview:
       "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
     detailedDescription: `• Developed ML algorithms for real-time personality assessment
@@ -67,7 +64,6 @@ export const gamesData: Project[] = [
     tags: ["Unreal Engine", "Blueprints", "C++"],
     imageUrl: AI1,
     videoUrl: "https://youtu.be/g8KDFuvY5sw",
-    projectLink: "https://youtu.be/g8KDFuvY5sw",
     overview:
       "Unreal engine exploration project. Includes simple enemy AI behviour, gameplay mechanics like character gliding, swimming, jump height multiplyer, elevator logic.",
     detailedDescription: `• Implemented comprehensive AI behavior systems for enemy characters
@@ -84,7 +80,6 @@ export const gamesData: Project[] = [
     shortDescription: "Open-source game development collaboration platform",
     tags: ["React", "Next.js", "SQL", "Tailwind"],
     imageUrl: GameDoora,
-    videoUrl: "",
     projectLink: "http://gamedoora.com/",
     overview:
       "First ever studio-as-a-service. A platform to create, connect and collaborate with people across the globe to develop awe-inspiring games the open source way.",
@@ -98,4 +93,4 @@ export const gamesData: Project[] = [
 • Focused on democratizing game development access`,
     category: "game"
   },
-] as const;
+];

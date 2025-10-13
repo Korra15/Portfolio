@@ -11,8 +11,8 @@ export type Project = {
   shortDescription: string;
   tags: string[];
   imageUrl: any; // StaticImageData from Next.js
-  videoUrl: string;
-  projectLink: string;
+  videoUrl?: string; // Optional video URL
+  projectLink?: string; // Optional project link
   overview: string; // Main description for modal overview section
   detailedDescription?: string; // Optional detailed description
   category: ProjectCategory;
