@@ -17,3 +17,15 @@ export type Project = {
   detailedDescription?: string; // Optional detailed description
   category: ProjectCategory;
 };
+
+// Define the experience structure type
+export type Experience = {
+  title: string;
+  company: string;
+  location: string;
+  description: string;
+  detailedDescription?: string; // Optional detailed description for expanded view
+  icon: React.ReactElement;
+  date: string;
+  link: string;
+};

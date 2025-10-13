@@ -1,21 +1,33 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
+import { experiencesData } from "@/lib/experience-data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import { useInView } from "react-intersection-observer";
+import DetailModal from "./detail-modal";
+import type { Experience } from "@/lib/types";
 
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 
 // Component for individual timeline element with its own inView state
-function TimelineItem({ item, theme, nhgLogoIcon }: { item: typeof experiencesData[number], theme: string, nhgLogoIcon: React.ReactNode }) {
+function TimelineItem({ 
+  item, 
+  theme, 
+  nhgLogoIcon, 
+  onViewDetails 
+}: { 
+  item: Experience;
+  theme: string;
+  nhgLogoIcon: React.ReactNode;
+  onViewDetails: () => void;
+}) {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -46,16 +58,51 @@ function TimelineItem({ item, theme, nhgLogoIcon }: { item: typeof experiencesDa
         fontSize: "1.5rem",
       }}
     >
-      <div ref={ref}>
-        <h3 className="font-bold capitalize text-lg">{item.title}</h3>
+      <div 
+        ref={ref} 
+        className="relative cursor-pointer group"
+        onClick={onViewDetails}
+      >
+        <h3 className="font-bold capitalize text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+          {item.title}
+        </h3>
         <h4 className="font-normal"> {item.company}</h4>
         <p className="font-normal !mt-0">{item.location}</p>
         <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
           {item.description}
-          <a href={item.link} target="_blank" className=""> 
-            <FaExternalLinkAlt className="text-blue-500 absolute bottom-0 right-0 pr-2 pb-2 text-2xl"/> 
-          </a>
         </p>
+        
+        {/* Call to action and Visit Company link */}
+        <div className="mt-4 flex items-center justify-between">
+          <div className="text-sm text-blue-600 dark:text-blue-400 font-medium">
+            Click to view details →
+          </div>
+          
+        {/* View Details button 
+        <div className="mt-4">
+          <button
+            onClick={onViewDetails}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
+          >
+            <FaInfoCircle className="text-base" />
+            View Details
+          </button>
+        </div>
+        */}
+          
+        
+
+          {/* Visit Company link */}
+          <a 
+            href={item.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex-shrink-0"
+            onClick={(e) => e.stopPropagation()} // Prevent card click when clicking icon
+          >
+            <FaExternalLinkAlt className="text-blue-500 text-sm hover:text-blue-600 transition-colors" />
+          </a>
+        </div>
       </div>
     </VerticalTimelineElement>
   );
@@ -64,6 +111,8 @@ function TimelineItem({ item, theme, nhgLogoIcon }: { item: typeof experiencesDa
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.25);
   const { theme } = useTheme();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedExperience, setSelectedExperience] = useState<Experience | null>(null);
 
   // Create NHG logo element with current theme
   const nhgLogoIcon = (
@@ -76,16 +125,50 @@ export default function Experience() {
     />
   );
 
+  const handleViewDetails = (experience: Experience) => {
+    setSelectedExperience(experience);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedExperience(null);
+  };
+
+  // Transform experience data for modal
+  const modalData = selectedExperience ? {
+    title: selectedExperience.title,
+    company: selectedExperience.company,
+    location: selectedExperience.location,
+    overview: selectedExperience.description,
+    date: selectedExperience.date,
+    link: selectedExperience.link,
+    detailedDescription: selectedExperience.detailedDescription,
+  } : null;
+
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-16 sm:mb-28">
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
-            <TimelineItem item={item} theme={theme} nhgLogoIcon={nhgLogoIcon} />
+            <TimelineItem 
+              item={item} 
+              theme={theme} 
+              nhgLogoIcon={nhgLogoIcon}
+              onViewDetails={() => handleViewDetails(item)}
+            />
           </React.Fragment>
         ))}
       </VerticalTimeline>
+
+      {/* Detail Modal */}
+      <DetailModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        data={modalData}
+        type="experience"
+      />
     </section>
   );
 }
