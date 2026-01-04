@@ -1,0 +1,5 @@
+export const NHGExperience = "\u2022 rfrf \n \u2022 bhdjfurgfjk";
+
+export const WCPExperience = "\u2022 Participated in a 5-week extensive training course organized by Epic Games, with support from Dancing Atoms Studios, AWS for";
+
+export const FlegeExperience = "\u2022 Led a team and served as the sole programmer for a metaverse workshop that combined immersive experiences simulating the Dubai real estate market using Unreal Engine.\n\u2022 Developed a multiplayer game adventure utilizing AWS services to deploy and manage gameplay functionalities, ensuring a seamless and engaging user experience.\n\u2022 Collaborated with cross-functional teams to design and implement game mechanics, resulting in a highly interactive virtual environment that captivated users.\n\u2022 Utilized advanced programming techniques and tools to optimize game performance, enhance graphics quality, and improve overall gameplay dynamics.\n\u2022 Successfully delivered the project within the stipulated timeline, receiving positive feedback from stakeholders for innovation and execution.";

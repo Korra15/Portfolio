@@ -14,7 +14,6 @@ import { useInView } from "react-intersection-observer";
 import DetailModal from "./detail-modal";
 import type { Experience } from "@/lib/types";
 
-import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 
 // Component for individual timeline element with its own inView state
 function TimelineItem({ 
@@ -60,8 +59,8 @@ function TimelineItem({
     >
       <div 
         ref={ref} 
-        className="relative cursor-pointer group"
-        onClick={onViewDetails}
+        className={`relative group ${item.detailedDescription ? 'cursor-pointer' : ''}`}
+        onClick={item.detailedDescription ? onViewDetails : undefined}
       >
         <h3 className="font-bold capitalize text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {item.title}
@@ -74,9 +73,11 @@ function TimelineItem({
         
         {/* Call to action and Visit Company link */}
         <div className="mt-4 flex items-center justify-between">
-          <div className="text-sm text-blue-600 dark:text-blue-400 font-medium">
-            Click to view details →
-          </div>
+          {item.detailedDescription && (
+            <div className="text-sm text-blue-600 dark:text-blue-400 font-medium">
+              Click to view details →
+            </div>
+          )}
           
         {/* View Details button 
         <div className="mt-4">
@@ -93,15 +94,14 @@ function TimelineItem({
         
 
           {/* Visit Company link */}
-          <a 
+          {/* <a 
             href={item.link} 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex-shrink-0"
             onClick={(e) => e.stopPropagation()} // Prevent card click when clicking icon
           >
-            <FaExternalLinkAlt className="text-blue-500 text-sm hover:text-blue-600 transition-colors" />
-          </a>
+          </a> */}
         </div>
       </div>
     </VerticalTimelineElement>

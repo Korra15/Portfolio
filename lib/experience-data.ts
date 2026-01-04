@@ -5,6 +5,7 @@ import { PiDesktopTowerDuotone } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiGamepadFill } from "react-icons/ri";
 import type { Experience } from "./types";
+import { NHGExperience, WCPExperience, FlegeExperience } from "./details/DetailedExperience";
 
 export const experiencesData: Experience[] = [
   {
@@ -22,8 +23,8 @@ export const experiencesData: Experience[] = [
     company: "Nodding Heads Games",
     location: "Pune, India",
     description:
-      "Ported Raji: An Ancient Epic on PS5. Working with an extablished studio expanding their diverse team to create a new classic action RPG genre. Working with the various teams to deliver best-in-class game mechanics for AAA games. Exploring, experimenting with UEFN, developing on various platforms, receiving mentorship from seniors is a delightful experience.",
-    detailedDescription: "Add your detailed description here for expanded view - you can include more technical details, specific achievements, technologies used, team size, etc.",
+      "Ported Raji: An Ancient Epic to PS5. Exploring, experimenting using UEFN.",
+    detailedDescription: NHGExperience,
     icon: React.createElement(IoGameController),
     date: "2023 - 2024",
     link: "https://www.noddingheadsgames.com/",
@@ -34,6 +35,7 @@ export const experiencesData: Experience[] = [
     location: "Remote",
     description:
       "Epic games with support from Dancing Atoms Studios, AWS for Games, Women in Games International and Green Rain had organized a 5-week extensive training course mentoring 100 creatives from across multiple regions on building and publishing cross-platform experiences in UEFN. Thrilling experience teaming up and working with women across the globe to construct wonderfous Fortnite islands.",
+    detailedDescription: WCPExperience,
     icon: React.createElement(SiEpicgames),
     date: "Sep|2023 - Oct|2023",
     link: "https://www.unrealengine.com/en-US/events/women-creators-program-2023",
@@ -44,12 +46,13 @@ export const experiencesData: Experience[] = [
     location: "Dubai, UAE",
     description:
       "Team lead and Sole programmer of a metaverse workshop combine with an immersive experience simulating the Dubai real estate market using unreal engine for a multiplayer game adventure using AWS services to deploy and manage gameplay functionalities.",
+    detailedDescription: FlegeExperience,
     icon: React.createElement(IoGameController),
     date: "May|2023 - Aug|2023",
     link: "https://flege.co/",
   },
   {
-    title: "Graduation",
+    title: "BTech - Computer Science and Engineering - Intelligent Systems",
     company: "MIT ADT University",
     location: "Pune, India",
     description:

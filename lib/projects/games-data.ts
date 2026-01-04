@@ -1,5 +1,5 @@
 import Game from "@/public/Game.png";
-import AI1 from "@/public/AI1.png";
+
 import TimeTest from "@/public/TimeTest.png"
 import PeopleAnalyzer from "@/public/PeopleAnalyzer.png"
 import GameDoora from "@/public/GameDoora.png";
@@ -7,37 +7,21 @@ import { Project } from "../types";
 
 export const gamesData: Project[] = [
   {
-    title: "TimeTest",
-    shortDescription: "2D maze chase game built against time with treasure hunting mechanics",
-    tags: ["GameMaker Studio"],
-    imageUrl: TimeTest,
-    videoUrl: "https://youtu.be/d7A8eDPak-0",
+    title: "Ember's Oath - Graduate Capstone Project",
+    shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
+    tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++"],
+    imageUrl: PeopleAnalyzer,
+    videoUrl: "https://youtu.be/HM0yv-m3DS0",
     overview:
-      "My first game developed for game jam titans under the theme 'time'. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
-    detailedDescription: `• Developed for Game Jam Titans with "time" theme constraint
-• Implemented real-time maze generation and navigation system
-• Created hunger-based gameplay mechanics with treasure collection
-• Designed bullet-dodging system with collision detection
-• Used GameMaker Studio for rapid prototyping and development
-• Balanced difficulty progression across multiple levels
-• Optimized performance for smooth 60fps gameplay`,
-    category: "game",
-  },
-  {
-    title: "Puzzle Shooter",
-    shortDescription: "Strategic FPS puzzle game with 2 challenging levels",
-    tags: ["Unreal Engine 5", "Blueprints", "C++"],
-    imageUrl: Game,
-    videoUrl: "https://youtu.be/ZkF977oFx_g",
-    overview:
-      "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
-    detailedDescription: `• Designed unique puzzle-shooting mechanics combining FPS with strategy
-• Implemented complex level design requiring logical thinking
-• Created weapon systems with puzzle-solving elements
-• Developed AI enemies with strategic behavior patterns
-• Used Unreal Engine 5's Blueprint system for rapid iteration
-• Integrated C++ for performance-critical gameplay systems
-• Focused on cultivating strategic and critical thinking skills`,
+      "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
+    detailedDescription: `• Developed ML algorithms for real-time personality assessment
+• Implemented reinforcement learning for adaptive conversation scenarios
+• Created immersive VR environment using Unity and C#
+• Integrated Mixamo animations for realistic character interactions
+• Built Flask backend for ML model inference and data processing
+• Designed personality-based scenario generation system
+• Developed for Android platform with cross-platform compatibility
+• Focused on improving interpersonal communication skills`,
     category: "game",
   },
   {
@@ -59,23 +43,6 @@ export const gamesData: Project[] = [
     category: "game",
   },
   {
-    title: "Game Mechanics + AI",
-    shortDescription: "Unreal Engine showcase with AI behaviors and game mechanics",
-    tags: ["Unreal Engine", "Blueprints", "C++"],
-    imageUrl: AI1,
-    videoUrl: "https://youtu.be/g8KDFuvY5sw",
-    overview:
-      "Unreal engine exploration project. Includes simple enemy AI behviour, gameplay mechanics like character gliding, swimming, jump height multiplyer, elevator logic.",
-    detailedDescription: `• Implemented comprehensive AI behavior systems for enemy characters
-• Developed fluid character movement including gliding and swimming
-• Created dynamic jump height multiplier based on context
-• Designed elevator systems with physics-based interactions
-• Combined Blueprint visual scripting with C++ for optimal performance
-• Explored advanced Unreal Engine features and capabilities
-• Focused on creating engaging and responsive gameplay mechanics`,
-    category: "game"
-  },
-  {
     title: "Gamedoora",
     shortDescription: "Open-source game development collaboration platform",
     tags: ["React", "Next.js", "SQL", "Tailwind"],
@@ -92,5 +59,22 @@ export const gamesData: Project[] = [
 • Facilitated cross-cultural collaboration and knowledge sharing
 • Focused on democratizing game development access`,
     category: "game"
+  },
+  {
+    title: "TimeTest",
+    shortDescription: "2D maze chase game built against time with treasure hunting mechanics",
+    tags: ["GameMaker Studio"],
+    imageUrl: TimeTest,
+    videoUrl: "https://youtu.be/d7A8eDPak-0",
+    overview:
+      "My first game developed for game jam titans under the theme 'time'. A 2D action maze chase to satisfy the hungry protagonist by feeding it treasures running agaist time navigating bullets.",
+    detailedDescription: `• Developed for Game Jam Titans with "time" theme constraint
+  • Implemented real-time maze generation and navigation system
+  • Created hunger-based gameplay mechanics with treasure collection
+  • Designed bullet-dodging system with collision detection
+  • Used GameMaker Studio for rapid prototyping and development
+  • Balanced difficulty progression across multiple levels
+  • Optimized performance for smooth 60fps gameplay`,
+    category: "game",
   },
 ];
