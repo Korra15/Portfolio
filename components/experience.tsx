@@ -38,9 +38,10 @@ function TimelineItem({
   const handleCardClick = () => {
     if (hasDetailedDescription) {
       onViewDetails();
-    } else {
+    } else if (item.link) {
       window.open(item.link, '_blank', 'noopener,noreferrer');
     }
+    // If no detailedDescription and no link, do nothing
   };
 
   return (
@@ -70,7 +71,7 @@ function TimelineItem({
     >
       <div 
         ref={ref} 
-        className="relative cursor-pointer group"
+        className={`relative group ${hasDetailedDescription || item.link ? 'cursor-pointer' : ''}`}
         onClick={handleCardClick}
       >
         <h3 className="font-bold capitalize text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -90,8 +91,8 @@ function TimelineItem({
             </div>
           )}
           
-          {/* Visit Company link icon - only show if no detailed description */}
-          {!hasDetailedDescription && (
+          {/* Visit Company link icon - only show if no detailed description and link exists */}
+          {!hasDetailedDescription && item.link && (
             <a 
               href={item.link} 
               target="_blank" 
@@ -140,7 +141,7 @@ export default function Experience() {
     title: selectedExperience.title,
     company: selectedExperience.company,
     location: selectedExperience.location,
-    overview: selectedExperience.description,
+    overview: selectedExperience.overview || selectedExperience.description, // Use overview if provided, otherwise description
     date: selectedExperience.date,
     link: selectedExperience.link,
     detailedDescription: selectedExperience.detailedDescription,

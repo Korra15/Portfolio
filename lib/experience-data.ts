@@ -3,9 +3,11 @@ import { SiEpicgames } from "react-icons/si";
 import { IoGameController } from "react-icons/io5";
 import { PiDesktopTowerDuotone } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
-import { RiGamepadFill } from "react-icons/ri";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { GiArchiveResearch } from "react-icons/gi";
+
 import type { Experience } from "./types";
-import { NHGExperience, WCPExperience, FlegeExperience, ERCExperience, StrallExperience } from "./details/DetailedExperience";
+import { TAOverview, TAExperience, GAExperience, NHGExperience, WCPExperience, FlegeExperience, StrallExperience } from "./details/DetailedExperience";
 
 export const experiencesData: Experience[] = [
   {
@@ -15,18 +17,39 @@ export const experiencesData: Experience[] = [
     description:
         "Currently pursuing my master's in game design and development from Rochester Institute of Technology.",
     icon: React.createElement(LuGraduationCap),
-    date: "2026",
+    date: "2024 - 2026",
     link: "https://www.rit.edu/",
+  },
+    {
+    title: "Teaching Assistant - Multiple Game Development Courses",
+    company: "Rochester Institute of Technology",
+    location: "Rochester, New York, USA",
+    description:
+        "Contributed as a Teaching Assistant for the multiple undergraduate game development course",
+    overview: TAOverview,
+    detailedDescription: TAExperience,
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "Jan|2025 - Present",
+  },
+    {
+    title: "Graudate Research Assistant",
+    company: "Rochester Institute of Technology",
+    location: "Rochester, New York, USA",
+    description:
+        "Worked as a VR Developer collaborating on a research project building games for kids with ADHD to help improve their focus and attention span through audio visual stimuli and interactive gameplay.",
+    detailedDescription: GAExperience,
+    icon: React.createElement(GiArchiveResearch),
+    date: "Aug|2024 - May|2025",
   },
   {
     title: "Game Programmer",
     company: "Nodding Heads Games",
     location: "Pune, India",
     description:
-      "Ported Raji: An Ancient Epic to PS5. Exploring, experimenting using UEFN.",
+      "Ported Raji: An Ancient Epic to PS5. Exploring, experimenting in UEFN to create narrative based experiences.",
     detailedDescription: NHGExperience,
     icon: React.createElement(IoGameController),
-    date: "2023 - 2024",
+    date: "Aug|2023 - May|2024",
     link: "https://www.noddingheadsgames.com/",
   },
   {
@@ -34,7 +57,7 @@ export const experiencesData: Experience[] = [
     company: "Epic Games",
     location: "Remote",
     description:
-      "Epic games with support from Dancing Atoms Studios, AWS for Games, Women in Games International and Green Rain had organized a 5-week extensive training course mentoring 100 creatives from across multiple regions on building and publishing cross-platform experiences in UEFN. Thrilling experience teaming up and working with women across the globe to construct wonderfous Fortnite islands.",
+      "Epic games with support from Dancing Atoms Studios, AWS for Games, Women in Games International and Green Rain had organized a 5-week extensive training course mentoring 100 women creators, on building and publishing cross-platform experiences in UEFN. Thrilling experience teaming up and working with women across the globe to construct exciting Fortnite islands.",
     detailedDescription: WCPExperience,
     icon: React.createElement(SiEpicgames),
     date: "Sep|2023 - Oct|2023",
@@ -45,42 +68,31 @@ export const experiencesData: Experience[] = [
     company: "Flege",
     location: "Dubai, UAE",
     description:
-      "Team lead and Sole programmer of a metaverse workshop combine with an immersive experience simulating the Dubai real estate market using unreal engine for a multiplayer game adventure using AWS services to deploy and manage gameplay functionalities.",
+      "Team Lead and Gameplay Programmer on an immersive multiplayer game simulation of the Dubai real estate market, developed in Unreal Engine and supported by AWS-based backend services for gameplay functionality and deployment.",
     detailedDescription: FlegeExperience,
     icon: React.createElement(IoGameController),
     date: "May|2023 - Aug|2023",
     link: "https://flege.co/",
   },
   {
-    title: "BTech - Computer Science and Engineering - Intelligent Systems",
+    title: "BTech. Computer Science and Engineering - Intelligent Systems",
     company: "MIT ADT University",
     location: "Pune, India",
     description:
-      "I completed my bachelors from MIT ADT University ranking 3rd in Bachelor of Technology Computer Science and Engineering - Intelligent Systems.",
+      "I completed my undergraduate from MIT ADT University ranking 3rd in Bachelor of Technology Computer Science and Engineering - Intelligent Systems.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    date: "2019 - 2023",
     link: "https://mituniversity.ac.in/",
-  },
-  {
-    title: "Unreal Developer",
-    company: "Eastern Royal Company",
-    location: "Pune, India",
-    description:
-      "Developed realistic 3D virtual tour games for university campuses, as a free roam exploration game allowing the user to wander around these locations grasping their essense in an interactive and engaging way. Also part of the team to create an adventure game named 'Local Streets'.",
-    detailedDescription: ERCExperience,
-    icon: React.createElement(RiGamepadFill),
-    date: "Jan|2022 - Oct|2023",
-    link: "https://www.youtube.com/channel/UCSNTRYL01WOflaOiMI6mHCA",
   },
   {
     title: "Game Developer",
     company: "Strall Pvt. Ltd.",
     location: "Mumbai, India",
     description:
-      "Gameplay functionality programmer collaborating with a team to develop a Team-Death-Match and Battle Royale multiplayer game. I also overlooked the server management and android build generation.",
+      "Worked as a Gameplay Functionality Programmer on Team Deathmatch and Battle Royale multiplayer modes, collaborating closely with the team and overseeing Android build generation.",
     detailedDescription: StrallExperience,
     icon: React.createElement(PiDesktopTowerDuotone),
-    date: "2022 - 2023",
+    date: "Sep|2022 - Apr|2023",
     link: "https://www.linkedin.com/company/strall-pvt-ltd/about/",
   },
 ] as const;

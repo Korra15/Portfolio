@@ -146,9 +146,10 @@ export default function DetailModal({ isOpen, onClose, data, type }: DetailModal
                   <h4 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                     Overview
                   </h4>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {data.overview}
-                  </p>
+                  <div 
+                    className="modal-content text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ __html: data.overview }}
+                  />
                 </div>
 
                 {/* Detailed Description */}
@@ -157,9 +158,10 @@ export default function DetailModal({ isOpen, onClose, data, type }: DetailModal
                     <h4 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
                       {isProject ? "Key Features & Implementation" : "Key Responsibilities & Achievements"}
                     </h4>
-                    <div className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-                      {data.detailedDescription}
-                    </div>
+                    <div 
+                      className="modal-content text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line"
+                      dangerouslySetInnerHTML={{ __html: data.detailedDescription }}
+                    />
                   </div>
                 )}
 

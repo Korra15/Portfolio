@@ -23,9 +23,10 @@ export type Experience = {
   title: string;
   company: string;
   location: string;
-  description: string;
+  description: string; // Short description shown on the card
+  overview?: string; // Optional longer overview for modal (falls back to description if not provided)
   detailedDescription?: string; // Optional detailed description for expanded view
   icon: React.ReactElement;
   date: string;
-  link: string;
+  link?: string;
 };

@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ProjectCategory } from "@/lib/types";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects");
+  const { ref } = useSectionInView("Projects", 0.3);
   const [activeTab, setActiveTab] = useState<ProjectCategory>("game");
   const [isLoaded, setIsLoaded] = useState(false);
 
