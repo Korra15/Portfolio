@@ -5,7 +5,7 @@ import { PiDesktopTowerDuotone } from "react-icons/pi";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiGamepadFill } from "react-icons/ri";
 import type { Experience } from "./types";
-import { NHGExperience, WCPExperience, FlegeExperience } from "./details/DetailedExperience";
+import { NHGExperience, WCPExperience, FlegeExperience, ERCExperience, StrallExperience } from "./details/DetailedExperience";
 
 export const experiencesData: Experience[] = [
   {
@@ -67,6 +67,7 @@ export const experiencesData: Experience[] = [
     location: "Pune, India",
     description:
       "Developed realistic 3D virtual tour games for university campuses, as a free roam exploration game allowing the user to wander around these locations grasping their essense in an interactive and engaging way. Also part of the team to create an adventure game named 'Local Streets'.",
+    detailedDescription: ERCExperience,
     icon: React.createElement(RiGamepadFill),
     date: "Jan|2022 - Oct|2023",
     link: "https://www.youtube.com/channel/UCSNTRYL01WOflaOiMI6mHCA",
@@ -77,6 +78,7 @@ export const experiencesData: Experience[] = [
     location: "Mumbai, India",
     description:
       "Gameplay functionality programmer collaborating with a team to develop a Team-Death-Match and Battle Royale multiplayer game. I also overlooked the server management and android build generation.",
+    detailedDescription: StrallExperience,
     icon: React.createElement(PiDesktopTowerDuotone),
     date: "2022 - 2023",
     link: "https://www.linkedin.com/company/strall-pvt-ltd/about/",

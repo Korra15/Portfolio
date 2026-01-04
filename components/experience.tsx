@@ -13,6 +13,7 @@ import { useTheme } from "@/context/theme-context";
 import { useInView } from "react-intersection-observer";
 import DetailModal from "./detail-modal";
 import type { Experience } from "@/lib/types";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 
 // Component for individual timeline element with its own inView state
@@ -31,6 +32,16 @@ function TimelineItem({
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const hasDetailedDescription = !!item.detailedDescription;
+
+  const handleCardClick = () => {
+    if (hasDetailedDescription) {
+      onViewDetails();
+    } else {
+      window.open(item.link, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   return (
     <VerticalTimelineElement
@@ -59,8 +70,8 @@ function TimelineItem({
     >
       <div 
         ref={ref} 
-        className={`relative group ${item.detailedDescription ? 'cursor-pointer' : ''}`}
-        onClick={item.detailedDescription ? onViewDetails : undefined}
+        className="relative cursor-pointer group"
+        onClick={handleCardClick}
       >
         <h3 className="font-bold capitalize text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {item.title}
@@ -73,35 +84,24 @@ function TimelineItem({
         
         {/* Call to action and Visit Company link */}
         <div className="mt-4 flex items-center justify-between">
-          {item.detailedDescription && (
+          {hasDetailedDescription && (
             <div className="text-sm text-blue-600 dark:text-blue-400 font-medium">
               Click to view details →
             </div>
           )}
           
-        {/* View Details button 
-        <div className="mt-4">
-          <button
-            onClick={onViewDetails}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
-          >
-            <FaInfoCircle className="text-base" />
-            View Details
-          </button>
-        </div>
-        */}
-          
-        
-
-          {/* Visit Company link */}
-          {/* <a 
-            href={item.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex-shrink-0"
-            onClick={(e) => e.stopPropagation()} // Prevent card click when clicking icon
-          >
-          </a> */}
+          {/* Visit Company link icon - only show if no detailed description */}
+          {!hasDetailedDescription && (
+            <a 
+              href={item.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex-shrink-0 ml-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FaExternalLinkAlt className="text-blue-500 text-sm hover:text-blue-600 transition-colors" />
+            </a>
+          )}
         </div>
       </div>
     </VerticalTimelineElement>
