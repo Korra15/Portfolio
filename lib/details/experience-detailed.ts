@@ -35,10 +35,49 @@ export const GAExperience = " Worked under Dr. Chao Peng as a VR developer worki
 "<li>I also ensured smooth performance and optimized the game for VR experience.</li>";
 
 
-export const NHGExperience = "\u2022 rfrf \n \u2022 bhdjfurgfjk";
+export const NHGExperience = "<ul>" + 
+"<li> Worked on porting <b> Raji: An Ancient Epic </b> to <b> PS5 </b>. This involved:" +
+    "<ul>" +
+    "<li>Optimizing game assets, improving performance, and ensuring compatibility with the new hardware.</li>" +
+    "<li>Collaborating with the development team to identify and resolve technical and errors.</li>" +
+    "<li>Implementing new features and enhancements to take advantage of the PS5's capabilities, namely:"+
+        "<ul>" +
+        "<li>Implementing RTX Raytracing for improved graphics quality.</li>" +
+        "<li>Incorporating advanced haptic feedback and adaptive triggers to enhance player immersion.</li>" +
+        "<li>Implementing PS5 trophies including a platinum trophy.</li>"+
+        "</ul> </li>" +
+    "<li>Conducting thorough testing and debugging to ensure the game met quality standards.</li>" +
+    "<li>Collborating with Sony for compliance and publishing requirements.</li>" +
+    "</ul></li>" +
+"<li> Worked on creating a digital artbook (showcasing concept art and a cinematic video player) for Raji: An Ancient Epic using Unreal Engine. </li>" +
+"<li> Explored Unreal Editor of Fortnite (UEFN) to migrate Raji's maps into Fortnite along with exploring the Verse programming language </li>"
+"</ul>";
 
-export const WCPExperience = "\u2022 Participated in a 5-week extensive training course organized by Epic Games, with support from Dancing Atoms Studios, AWS for";
+export const WCPExperience = "<ul>"+
+"<li>Got selected in 100 women globally to participate in a 5-week extensive training course on Unreal Editor for Fortnite (UEFN).</li>" +
+"<li> During this program, I worked on a project to create an immersive narritive driven experience in Fortnite using UEFN and Verse programming language. The project involved designing interactive elements, scripting gameplay mechanics, and optimizing the experience for performance within the Fortnite ecosystem.\n" +
+    "<ul>" +
+    "<li>Utilized Verse programming language to script gameplay mechanics, events, and interactions within the Fortnite environment.</li>" +
+    "<li>Collaborated with fellow participants to share ideas, provide feedback, and enhance the overall quality of the project.</li>" +
+    "<li>Tested and optimized the experience to ensure smooth performance and engaging gameplay for players.</li>" +
+"</li></ul>";
 
-export const FlegeExperience = "\u2022 Led a team and served as the sole programmer for a metaverse workshop that combined immersive experiences simulating the Dubai real estate market using Unreal Engine.\n\u2022 Developed a multiplayer game adventure utilizing AWS services to deploy and manage gameplay functionalities, ensuring a seamless and engaging user experience.\n\u2022 Collaborated with cross-functional teams to design and implement game mechanics, resulting in a highly interactive virtual environment that captivated users.\n\u2022 Utilized advanced programming techniques and tools to optimize game performance, enhance graphics quality, and improve overall gameplay dynamics.\n\u2022 Successfully delivered the project within the stipulated timeline, receiving positive feedback from stakeholders for innovation and execution.";
+export const FlegeExperience = "<ul>" +
+"<li>Led the programming team for a short 3-month project and worked as a gameplay programmer for a metaverse workshop combined with an immersive experience built using Unreal Engine. </li>" +
+'<li>Contributed to simulating the Dubai real estate market as a hyper-realistic, playable experience, allowing players to buy and sell properties, along with a dynamic day–night system that mimics real-world real estate market behavior over time.</li>' +
+"<li>Developed the player controller and hoverboard mechanics, enabling aerial player movement and enhancing immersion within the game world.</li>" +
+"<li>Assisted in developing multiplayer gameplay functionality using AWS, enabling multiple players to coexist in a single map, with replication systems that support seamless property buying and selling.</li>" +
+"<li>Managed the programming team using Trello boards, ensuring tasks were completed efficiently within the short project timeframe.</li>" +
+"</ul>";
 
-export const StrallExperience = "\u2022 Developed and maintained game features using Unreal Engine, ensuring high performance and engaging gameplay.\n\u2022 Collaborated with designers and artists to implement game mechanics and visual effects that enhanced the overall player experience.\n\u2022 Participated in code reviews and debugging sessions to identify and resolve technical issues, improving game stability and performance.\n\u2022 Contributed to the development of multiplayer functionalities, enabling seamless online interactions for players.\n\u2022 Stayed updated with the latest industry trends and technologies to incorporate innovative solutions into game development processes.";
+export const StrallExperience = "<ul>" 
+"<li>Worked as a Junior Gameplay Programmer on a game featuring Team Deathmatch and Battle Royale modes.</li>" +
+"<li>Responsible for implementing the following features:" +
+    "<ul>"
+    "<li>Player locomotion systems, including basic movement, directional sprinting, mantling, and vaulting.</li>" +
+    "<li>Glider system, including associated physics and fall/height damage when not equipped.</li>" +
+    "<li>Minimap system using scene capture functionality, allowing players to understand their location within the large game environment.</li>" +
+    "<li>Basic puzzle logic, including switches, block puzzles, and pressure plate mechanics.</li>" +
+    "<li>Sound system implementation, adding footstep, explosion, and environmental sounds to enhance immersion and overall game quality.</li>" +
+    "</ul> </li>" +
+"</ul>";
