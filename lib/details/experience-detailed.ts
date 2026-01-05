@@ -19,7 +19,21 @@ export const TAExperience =
 "</ul>" +
 "\n Through these roles, I have encouraged creativity and innovation in game design while ensuring adherence to project requirements.";
 
-export const GAExperience = " Worked under Dr. Chao Peng as a VR developer working on a research project in collaboartion with the University of Rochester, building interactive game experience for kids between 7-12 years old with ADHD to help improve thier focus and attention span through audio visual stimuli and engaging gameplay mechanics. My responsibilities included:\n";
+export const GAExperience = " Worked under Dr. Chao Peng as a VR developer working on a research project in collaboartion with the University of Rochester, building interactive game experience for kids between 7-12 years old with ADHD to help improve thier focus and attention span through audio visual stimuli and engaging gameplay mechanics.\n\n" +
+"The game mechanics are designed to improve focus by requiring players to complete tasks that involve constant attention. The audio-visual stimuli are carefully crafted to engage players without overwhelming them, creating a balanced and immersive experience.\n" +
+"<ul>" +
+"<li>Developed the game using <b> Unity </b> for the <b> Meta Quest Pro </b> </li>" +
+"<li>The player is stuck in a fantasy island where farm animals are captured and need to be rescued thorugh the audio-visual cues." +
+    "<ul>" +
+    "<li>The visual cue being the name of the animal being displayed to the player and the audio cue being the corresponding animal sound.</li>" +
+    "<li> Player task being to match the current animal name and it's sound therefore rescuing the animal </li>" +
+    "</ul> </li>" +
+"</ul>\n" +
+"My responsibilities included:\n" +
+"<ul>" +
+"<li>I implemented core gameplay mechanics like the audio manager using C# in Unity.</li>" +
+"<li>I also ensured smooth performance and optimized the game for VR experience.</li>";
+
 
 export const NHGExperience = "\u2022 rfrf \n \u2022 bhdjfurgfjk";
 

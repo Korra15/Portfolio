@@ -7,7 +7,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { GiArchiveResearch } from "react-icons/gi";
 
 import type { Experience } from "./types";
-import { TAOverview, TAExperience, GAExperience, NHGExperience, WCPExperience, FlegeExperience, StrallExperience } from "./details/DetailedExperience";
+import { TAOverview, TAExperience, GAExperience, NHGExperience, WCPExperience, FlegeExperience, StrallExperience } from "./details/experience-detailed";
 
 export const experiencesData: Experience[] = [
   {
