@@ -95,4 +95,5 @@ export const experiencesData: Experience[] = [
     date: "Sep|2022 - Apr|2023",
     link: "https://www.linkedin.com/company/strall-pvt-ltd/about/",
   },
-] as const;
+];
+// as const;
