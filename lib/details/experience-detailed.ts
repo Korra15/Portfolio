@@ -70,10 +70,10 @@ export const FlegeExperience = "<ul>" +
 "<li>Managed the programming team using Trello boards, ensuring tasks were completed efficiently within the short project timeframe.</li>" +
 "</ul>";
 
-export const StrallExperience = "<ul>" 
+export const StrallExperience = "<ul>" +
 "<li>Worked as a Junior Gameplay Programmer on a game featuring Team Deathmatch and Battle Royale modes.</li>" +
 "<li>Responsible for implementing the following features:" +
-    "<ul>"
+    "<ul>" +
     "<li>Player locomotion systems, including basic movement, directional sprinting, mantling, and vaulting.</li>" +
     "<li>Glider system, including associated physics and fall/height damage when not equipped.</li>" +
     "<li>Minimap system using scene capture functionality, allowing players to understand their location within the large game environment.</li>" +
