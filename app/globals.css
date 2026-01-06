@@ -13,3 +13,39 @@ htnl.dark {
 .borderBlack {
     @apply border border-black/10;
 }
+
+/* Styling for HTML lists in modal content */
+.modal-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.modal-content ul ul,
+.modal-content ol ul,
+.modal-content ul ol,
+.modal-content ol ol {
+  margin-left: 1.5rem;
+}
+
+/* Prevent flash of unstyled content */
+.project-section {
+  visibility: hidden;
+}
+
+.project-section.loaded {
+  visibility: visible;
+}

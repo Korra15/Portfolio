@@ -6,10 +6,17 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useModalContext } from "@/context/modal-context";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+  const { isModalOpen } = useModalContext();
+
+  // Don't render header when modal is open
+  if (isModalOpen) {
+    return null;
+  }
 
   return (
     <header className="z-[999] relative">
