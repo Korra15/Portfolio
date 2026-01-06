@@ -2,7 +2,7 @@ import Game from "@/public/Game.png";
 import AI1 from "@/public/AI1.png";
 import QueensQuard from "@/public/QueensGuard.png";
 import WarmingWarning from "@/public/WarmingWarning.png";
-import { GameMechanicsAIDetailed, PuzzleShooterDetailed } from "../details/prototypes-detailed";
+import { GameMechanicsAIDetailed, PuzzleShooterDetailed, QueensGuardDetailed, WarmingWarningDetailed } from "../details/prototypes-detailed";
 import { Project } from "../types";
 
 export const prototypesData: Project[] = [
@@ -31,23 +31,25 @@ export const prototypesData: Project[] = [
 
    {
     title: "The Queens Guard",
-    shortDescription: "",
-    tags: [],
+    shortDescription: "A relentless challenger grows smarter with each return, while adaptive AI and dynamic weather evolve alongside the fight until only one survives.",
+    tags: ["Unity 2022.3.38f1", "C#",  "Trello"],
     imageUrl: QueensQuard,
     videoUrl: "https://www.youtube.com/watch?v=Z--jgs82kb0",
     overview:
-      "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
+      "Many have tried to reach the Queen, but all have fallen before your might, and this new challenger should be no different.Easily slain, they return. Slain again, they return stronger and smarter than before. Will this new challenger overcome The Queen’s Guard and take the Queen, or will their ambitions be crushed beneath you like all that came before them?",
+    detailedDescription: QueensGuardDetailed,
     category: "prototype",
   },
 
   {
     title: "Warming Warning",
     shortDescription: "",
-    tags: [],
+    tags: ["Unity 2022.3.38f1", "C#", "Trello"],
     imageUrl: WarmingWarning,
     videoUrl: "https://youtu.be/nHZv34L6GhA",
     overview:
-      "A 2 level puzle based first person shooter game, filled with challenges aimed to culivate strategical, logical and critical thinking.",
+      "",
+    detailedDescription: WarmingWarningDetailed,
     category: "prototype",
   },
 ];

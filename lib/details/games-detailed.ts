@@ -9,6 +9,8 @@ export const EmbersOathDetailed = "<ul>" +
   "<li>Focused on improving interpersonal communication skills</li>" +
 "</ul>";
 
+export const echoesDetailed = "";
+
 export const PeopleAnalyzerDetailed = "<ul>" +
   "<li>Developed ML algorithms for real-time personality assessment</li>" +
   "<li>Implemented reinforcement learning for adaptive conversation scenarios</li>" +
