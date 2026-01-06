@@ -40,6 +40,7 @@ export const QueensGuardDetailed = "<ul>" +
     "<li>Used iterative playtesting feedback to refine UI clarity, responsiveness, and information hierarchy.</li>" +
     "<li>Collaborated closely with gameplay and AI programmers to synchronize UI events with combat, learning, and environmental systems.</li>" +
 "</ul> </li>" +
+"<li> <a href='https://github.com/Korra15/The-Queens-Guard' target='_blank' rel='noopener noreferrer'>Here is the GitHub repository</a> </li>" +
 "</ul>";
 
 export const WarmingWarningDetailed = "<ul>" ;
