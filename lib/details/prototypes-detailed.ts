@@ -24,11 +24,11 @@ export const PuzzleShooterDetailed = "<ul>" +
 "</ul>";
 
 export const QueensGuardDetailed = "<ul>" +
-"<li> The Queens Guard Reverse Souls-like prototype where the player controls the boss defending against an adaptive, respawning enemy. </li>" +
+"<li> The Queens Guard is a reverse souls-like prototype where the player controls the boss defending against an adaptive, respawning enemy. </li>" +
 "<li> Features an AI opponent that learns from player attack patterns and returns stronger after each defeat. </li>" +
 "<li> Dynamic weather system that changes after each enemy death, influencing movement, combat, and survivability. </li>" +
 "<li> Designed to encourage emergent gameplay by forcing constant player adaptation. </li>" +
-"<li> My Responsibilities as the UI Developer included:" +
+"<li> My contributions as the <b>UI Developer</b> included:" +
 "<ul>" +
     "<li>Designed and implemented the complete Heads-Up Display (HUD) to clearly communicate gameplay-critical information in real time.</li>" +
     "<li>Developed a combo tracking UI system that dynamically displays the player’s active attack combinations and limits, reinforcing adaptive combat mechanics.</li>" +
@@ -36,11 +36,24 @@ export const QueensGuardDetailed = "<ul>" +
     "<li>Built and integrated health and progression indicators, including player health bars and AI kill count tracking.</li>" +
     "<li>Created the main menu, pause menu, and options UI, enabling seamless game flow control (resume, restart, quit, navigation).</li>" +
     "<li>Ensured UI visuals remained consistent with the pixel-art aesthetic, sourcing and integrating free assets while maintaining readability and clarity.</li>" +
-    "<li>Coordinated UI updates with adaptive AI and weather systems, ensuring UI accurately reflected gameplay state changes.</li>" +
     "<li>Used iterative playtesting feedback to refine UI clarity, responsiveness, and information hierarchy.</li>" +
-    "<li>Collaborated closely with gameplay and AI programmers to synchronize UI events with combat, learning, and environmental systems.</li>" +
+    "<li>Collaborated closely with gameplay and AI programmers to synchronize UI events with combat.</li>" +
 "</ul> </li>" +
-"<li> <a href='https://github.com/Korra15/The-Queens-Guard' target='_blank' rel='noopener noreferrer'>Here is the GitHub repository</a> </li>" +
 "</ul>";
 
-export const WarmingWarningDetailed = "<ul>" ;
+export const WarmingWarningDetailed = "<ul>" +
+  "<li>Turn-based city builder and survival game centered around the impacts of climate change on a sinking island.</li>" +
+  "<li>Players take on the role of the Mayor, placing buildings during the day to manage population, happiness, and flood resistance.</li>" +
+  "<li>Each night, water levels rise, permanently submerging parts of the island.</li>" +
+  "<li>Designed as a roguelike-inspired experience where loss is inevitable, encouraging players to survive as long as possible and beat previous runs.</li>" +
+  "<li>My contributions as the <b>gameplay programmer</b> were:" +
+  "<ul>" +
+    "<li>Developed the core turn system, restructuring the day–night cycle to clearly separate player decision-making (day) from consequence resolution (night).</li>" +
+    "<li>Refined resource management mechanics, balancing money, population, happiness, and water resistance to create meaningful strategic trade-offs.</li>" +
+    "<li>Worked on developing the rising water system to dynamically respond to player-built flood defenses, making placement decisions feel impactful rather than linear.</li>" +
+    "<li>Implemented time-based building effects, ensuring daytime decisions directly impact the water level rise.</li>" +
+    "<li>Tuned gameplay pacing to reinforce the game's theme of inevitability, gradually increasing pressure as the island shrinks.</li>" +
+    "<li>Iterated on mechanics using playtest feedback to improve balance, clarity, and long-term engagement.</li>" +
+  "</ul>" +
+  "</li>" +
+"</ul>";

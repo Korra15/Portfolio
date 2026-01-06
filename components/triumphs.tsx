@@ -94,7 +94,6 @@ export default function Triumphs() {
         <li> <BiSolidGame className="inline"/> Attended the Indian Game Developer Conference (IGDC) 2023 as a part of team Nodding Heads Games. </li>
         <li> <BiSolidGame className="inline"/> Participated in the YUVA: Prime Minister’s Scheme for Mentoring Young Authors. </li>
         <li> <BiSolidGame className="inline"/> Volunteered in the organizing committee of multiple college events and fests. </li>
-        <li> <BiSolidGame className="inline"/> An outdoor person who loves to venture the wild, conquer mountains and feel through food. </li>
       </ul>
 
 

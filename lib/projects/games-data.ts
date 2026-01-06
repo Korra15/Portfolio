@@ -9,28 +9,28 @@ import { EmbersOathDetailed, PeopleAnalyzerDetailed, GamedooraDetailed, TimeTest
 import { Project } from "../types";
 
 export const gamesData: Project[] = [
-  {
-    title: "Ember's Oath - Graduate Capstone Project",
-    shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
-    tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++"],
-    imageUrl: EmbersOath,
-    videoUrl: "https://youtu.be/HM0yv-m3DS0",
-    overview:
-      "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
-    detailedDescription: EmbersOathDetailed,
-    category: "game",
-  },
-  {
-    title: "echoes",
-    shortDescription: "",
-    tags: ["Game Director", "Assistant Producer", "Unity", "C#"],
-    imageUrl: echoes,
-    videoUrl: "https://www.echoes-vip.org/",
-    overview:
-      "",
-    detailedDescription: echoesDetailed,
-    category: "game",
-  },
+  // {
+  //   title: "Ember's Oath - Graduate Capstone Project",
+  //   shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
+  //   tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++"],
+  //   imageUrl: EmbersOath,
+  //   videoUrl: "https://youtu.be/HM0yv-m3DS0",
+  //   overview:
+  //     "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
+  //   detailedDescription: EmbersOathDetailed,
+  //   category: "game",
+  // },
+  // {
+  //   title: "echoes",
+  //   shortDescription: "",
+  //   tags: ["Game Director", "Assistant Producer", "Unity", "C#"],
+  //   imageUrl: echoes,
+  //   videoUrl: "https://www.echoes-vip.org/",
+  //   overview:
+  //     "",
+  //   detailedDescription: echoesDetailed,
+  //   category: "game",
+  // },
   {
     title: "People Analyzer",
     shortDescription: "VR personality analyzer with AI-driven conversation simulation",

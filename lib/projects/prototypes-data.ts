@@ -31,24 +31,25 @@ export const prototypesData: Project[] = [
 
    {
     title: "The Queens Guard",
-    shortDescription: "A relentless challenger grows smarter with each return, while adaptive AI and dynamic weather evolve alongside the fight until only one survives.",
+    shortDescription: "A reverse Souls-like where an adaptive enemy returns smarter each time, forcing the boss to evolve or fall.",
     tags: ["Unity 2022.3.38f1", "C#",  "Trello"],
     imageUrl: QueensQuard,
     videoUrl: "https://www.youtube.com/watch?v=Z--jgs82kb0",
     overview:
       "Many have tried to reach the Queen, but all have fallen before your might, and this new challenger should be no different.Easily slain, they return. Slain again, they return stronger and smarter than before. Will this new challenger overcome The Queen’s Guard and take the Queen, or will their ambitions be crushed beneath you like all that came before them?",
     detailedDescription: QueensGuardDetailed,
+    githubLink: "https://github.com/Korra15/The-Queens-Guard",
     category: "prototype",
   },
 
   {
     title: "Warming Warning",
-    shortDescription: "",
+    shortDescription: "A turn-based city survival game where players fight a losing battle against rising seas by managing people, resources, and time.",
     tags: ["Unity 2022.3.38f1", "C#", "Trello"],
     imageUrl: WarmingWarning,
     videoUrl: "https://youtu.be/nHZv34L6GhA",
     overview:
-      "",
+      "The island is sinking due to rising water levels. Your job as Mayor is to keep your people happy and to protect their homes on the island for as long as possible. During the night, the water rises, and parts of the island will sink. Place houses, recreation centers, and water control facitilities strategically to retain your population, increase happiness, and extend your turns for as long as possible.",
     detailedDescription: WarmingWarningDetailed,
     category: "prototype",
   },

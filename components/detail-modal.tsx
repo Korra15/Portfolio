@@ -18,6 +18,7 @@ type DetailModalProps = {
     date?: string; // For experiences
     link?: string; // For experiences
     projectLink?: string; // For projects - now optional
+    githubLink?: string; // For projects - now optional
     videoUrl?: string; // For projects - now optional
     tags?: string[]; // For projects
     imageUrl?: any; // For projects
@@ -176,6 +177,19 @@ export default function DetailModal({ isOpen, onClose, data, type }: DetailModal
                       className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
                     >
                       {isProject ? "View Project" : "Visit Company"}
+                      <FaExternalLinkAlt className="w-4 h-4" />
+                    </a>
+                  )}
+                  
+                  {/* GitHub link button for projects */}
+                  {isProject && data.githubLink && (
+                    <a
+                      href={data.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg transition-colors"
+                    >
+                      View on GitHub
                       <FaExternalLinkAlt className="w-4 h-4" />
                     </a>
                   )}

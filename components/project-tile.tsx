@@ -12,6 +12,7 @@ type ProjectTileProps = {
   imageUrl: any;
   videoUrl?: string;
   projectLink?: string;
+  githubLink?: string;
   index: number;
   overview?: string; // Changed from description
   detailedDescription?: string;
@@ -24,6 +25,7 @@ export default function ProjectTile({
   imageUrl,
   videoUrl,
   projectLink,
+  githubLink,
   index,
   overview,
   detailedDescription,
@@ -38,6 +40,7 @@ export default function ProjectTile({
     title,
     overview: overview || shortDescription,
     projectLink,
+    githubLink,
     videoUrl,
     tags: Array.from(tags),
     imageUrl,

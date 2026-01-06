@@ -13,6 +13,7 @@ export type Project = {
   imageUrl: any; // StaticImageData from Next.js
   videoUrl?: string; // Optional video URL
   projectLink?: string; // Optional project link
+  githubLink?: string; // Optional GitHub repository link
   overview: string; // Main description for modal overview section
   detailedDescription?: string; // Optional detailed description
   category: ProjectCategory;
