@@ -72,7 +72,7 @@ export const experiencesData: Experience[] = [
     detailedDescription: FlegeExperience,
     icon: React.createElement(IoGameController),
     date: "May|2023 - Aug|2023",
-    link: "https://flege.co/",
+    //link: "https://flege.co/",
   },
   {
     title: "BTech. Computer Science and Engineering - Intelligent Systems",
