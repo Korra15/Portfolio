@@ -20,17 +20,17 @@ export const gamesData: Project[] = [
   //   detailedDescription: EmbersOathDetailed,
   //   category: "game",
   // },
-  // {
-  //   title: "echoes",
-  //   shortDescription: "",
-  //   tags: ["Game Director", "Assistant Producer", "Unity", "C#"],
-  //   imageUrl: echoes,
-  //   videoUrl: "https://www.echoes-vip.org/",
-  //   overview:
-  //     "",
-  //   detailedDescription: echoesDetailed,
-  //   category: "game",
-  // },
+  {
+    title: "echoes",
+    shortDescription: "Part of a team that explores games as reflections of our community",
+    tags: ["Game Director", "Assistant Producer", "Unity", "C#"],
+    imageUrl: echoes,
+    projectLink: "https://www.echoes-vip.org/",
+    overview:
+      "It is a Virtually Integrated Project (VIP) that is about making community games that are small, personal and deeply human. They are not about scale or granduer, but about creating small meaningful moments of connection that ripple outwards.",
+    //detailedDescription: echoesDetailed,
+    category: "game",
+  },
   {
     title: "People Analyzer",
     shortDescription: "VR personality analyzer with AI-driven conversation simulation",
