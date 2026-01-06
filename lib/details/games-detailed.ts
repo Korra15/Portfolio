@@ -1,15 +1,8 @@
 export const EmbersOathDetailed = "<ul>" +
-  "<li>Developed ML algorithms for real-time personality assessment</li>" +
-  "<li>Implemented reinforcement learning for adaptive conversation scenarios</li>" +
-  "<li>Created immersive VR environment using Unity and C#</li>" +
-  "<li>Integrated Mixamo animations for realistic character interactions</li>" +
-  "<li>Built Flask backend for ML model inference and data processing</li>" +
-  "<li>Designed personality-based scenario generation system</li>" +
-  "<li>Developed for Android platform with cross-platform compatibility</li>" +
-  "<li>Focused on improving interpersonal communication skills</li>" +
 "</ul>";
 
-export const echoesDetailed = "";
+export const echoesDetailed = "<ul>" +
+"</ul>";
 
 export const PeopleAnalyzerDetailed = "<ul>" +
   "<li>Developed ML algorithms for real-time personality assessment</li>" +
