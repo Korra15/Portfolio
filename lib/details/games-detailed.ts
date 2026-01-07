@@ -1,7 +1,20 @@
 export const EmbersOathDetailed = "<ul>" +
+  "<li> This is my graduate capstone project currently in development  </li>" +
+  "<li> Developed using Unreal Engine 5.6 with C++ programming </li>" +
+  "<li> Being the Game Designer and UI Programmer I am implementing the phoenix character and the whole UI of the game. </li>" +
 "</ul>";
 
 export const echoesDetailed = "<ul>" +
+  "<li> Will be contributing as a game director under the new theme <b> Resonant Voices </b>" +
+    "<ul>" +
+      "<li> Plan to effectively lead the team while applying agile values to deliver a game that evokes emotion and leaves a lasting impact. </li>" +
+  "</li>" +
+  "<li> Served an Assistant Producer in a multidisciplinary team focused on creating games inspired by poetry under the theme <b> Paths of Change </b>" +
+   "<ul>" +
+      "<li> Coordinated between the 4 different game teams to ensure timely delivery of assets and features </li>" +
+      "<li> Monitored project progress through regular updates and sprint planning </li>" +
+    "</ul>" +
+  "</li>" +
 "</ul>";
 
 export const PeopleAnalyzerDetailed = "<ul>" +

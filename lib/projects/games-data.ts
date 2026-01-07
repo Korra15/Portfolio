@@ -17,7 +17,7 @@ export const gamesData: Project[] = [
     videoUrl: "https://youtu.be/2h7qhLl50wY",
     overview:
       "In a dark fantasy world where magic is nearly extinct, Ember, a fire mage who can transform into a phoenix, must reclaim lost knowledge and confront a tyrant determined to erase magic forever.",
-    //detailedDescription: EmbersOathDetailed,
+    detailedDescription: EmbersOathDetailed,
     category: "game",
   },
   {
@@ -28,7 +28,7 @@ export const gamesData: Project[] = [
     projectLink: "https://www.echoes-vip.org/",
     overview:
       "It is a Virtually Integrated Project (VIP) that is about making community games that are small, personal and deeply human. They are not about scale or granduer, but about creating small meaningful moments of connection that ripple outwards.",
-    //detailedDescription: echoesDetailed,
+    detailedDescription: echoesDetailed,
     category: "game",
   },
   {
