@@ -13,6 +13,7 @@ import { FaGitAlt } from "react-icons/fa6";
 import { BiSolidGame } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
 import { FaUniversity } from "react-icons/fa";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 
 
@@ -32,7 +33,39 @@ export default function Triumphs() {
     >
       <SectionHeading>Triumphs</SectionHeading>
 
-      <h3 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> sports :</h3>
+      <h2 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> Game Design and Level Design :</h2>
+      <ul className="list-image-none list-outside mr-2 ml-5">
+        <li> <BiSolidGame className="inline"/> Conducting research on a survey-driven evaluation method that applies the MDA framework and design thinking to assess early design iterations without heavy prototyping. </li>
+        <li> <BiSolidGame className="inline"/>The following projects explore level design across multiple genres, focusing on layout, pacing, environment storytelling and player flow. 
+          <ul className="list-disc mr-2 ml-16 list-outside mb-1">
+            <li> Designed an RPG campaign for the turn based game "The Battle for Wesnoth". <a href="https://www.youtube.com/playlist?list=PLO3tVIkjD4ZLSQZWCcXnEjLNIj-OJbELi" className="underline text-blue-500" target="_blank"> Here is the link to the campaign </a> </li>
+            <li> Designed an narrative driven FPS experience using Unreal Editor for Fortnite (UEFN). <a href="https://youtu.be/7Q57CgXvQ24" className="underline text-blue-500" target="_blank"> Here is the link to the level </a>
+              <ul className="list-disc mr-2 ml-16 list-outside mb-1">
+                <li> This level uses environmental storytelling to guide the player and convey the game’s narrative.</li>
+              </ul> 
+            </li>
+            <li> Designed a puzzle level in Portal using it's level editor. <a href="https://youtu.be/Lt5f-Zu8HHo" className="underline text-blue-500" target="_blank"> Here is the link to the level </a> 
+              <ul className="list-disc mr-2 ml-16 list-outside mb-1">
+                  <li>The level is divided into three parts:
+                    <ul className="list-disc mr-2 ml-16 list-outside mb-1">
+                      <li>Part 1: Introduces core mechanics.</li>
+                      <li>Part 2: Adds a second mechanic while reinforcing the first.</li>
+                      <li>Part 3: Final challenge combining all learned skills.</li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+            <li> Designed a 2D platformer level for "BattleBlock Theatre". <a href="https://www.youtube.com/playlist?list=PLO3tVIkjD4ZKn8qOT6g6nrS0JhHPGhnyT" className="underline text-blue-500" target="_blank"> Here is the link to the level </a>
+              <ul className="list-disc mr-2 ml-16 list-outside mb-1">
+                <li> A level where you have to race against time to collect all strawberries and one pie. </li>
+                <li> The more you explore the more you are rewarded. </li>
+              </ul>
+            </li>
+          </ul> 
+        </li>
+      </ul>
+
+      <h2 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> sports :</h2>
       <ul className="list-image-none list-outside mr-2 ml-5">
         <li> <FaTrophy className="inline"/> Overjoyed to receive a silver medal for archery at the intercollegiate championship held at MIT ADT university.</li>
         <li> <FaTrophy className="inline"/> Feeling elated to receive a gold medal for winning the intercollegiate football(soccer) championship held at MIT ADT university.</li>
@@ -91,9 +124,9 @@ export default function Triumphs() {
 
       <h2 className="text-2xl font-[600] capitalize text-left mt-4 ml-1"> others :</h2>
       <ul className="list-image-none list-outside mr-2 ml-5">
-        <li> <BiSolidGame className="inline"/> Attended the Indian Game Developer Conference (IGDC) 2023 as a part of team Nodding Heads Games. </li>
-        <li> <BiSolidGame className="inline"/> Participated in the YUVA: Prime Minister’s Scheme for Mentoring Young Authors. </li>
-        <li> <BiSolidGame className="inline"/> Volunteered in the organizing committee of multiple college events and fests. </li>
+        <li> <FaAngleDoubleRight className="inline"/> Attended the Indian Game Developer Conference (IGDC) 2023 as a part of team Nodding Heads Games. </li>
+        <li> <FaAngleDoubleRight className="inline"/> Participated in the YUVA: Prime Minister’s Scheme for Mentoring Young Authors. </li>
+        <li> <FaAngleDoubleRight className="inline"/> Volunteered in the organizing committee of multiple college events and fests. </li>
       </ul>
 
 

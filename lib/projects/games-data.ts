@@ -9,17 +9,17 @@ import { EmbersOathDetailed, PeopleAnalyzerDetailed, GamedooraDetailed, TimeTest
 import { Project } from "../types";
 
 export const gamesData: Project[] = [
-  // {
-  //   title: "Ember's Oath - Graduate Capstone Project",
-  //   shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
-  //   tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++"],
-  //   imageUrl: EmbersOath,
-  //   videoUrl: "https://youtu.be/HM0yv-m3DS0",
-  //   overview:
-  //     "ML, RL, VR application to access the users personality and generate scenarios based on the output to simulate human conversations aiding  players to communicate with different personalities.",
-  //   detailedDescription: EmbersOathDetailed,
-  //   category: "game",
-  // },
+  {
+    title: "Ember's Oath - Graduate Capstone Project",
+    shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
+    tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++"],
+    imageUrl: EmbersOath,
+    videoUrl: "https://youtu.be/2h7qhLl50wY",
+    overview:
+      "In a dark fantasy world where magic is nearly extinct, Ember, a fire mage who can transform into a phoenix, must reclaim lost knowledge and confront a tyrant determined to erase magic forever.",
+    detailedDescription: EmbersOathDetailed,
+    category: "game",
+  },
   {
     title: "echoes",
     shortDescription: "Part of a team that explores games as reflections of our community",
@@ -28,7 +28,7 @@ export const gamesData: Project[] = [
     projectLink: "https://www.echoes-vip.org/",
     overview:
       "It is a Virtually Integrated Project (VIP) that is about making community games that are small, personal and deeply human. They are not about scale or granduer, but about creating small meaningful moments of connection that ripple outwards.",
-    //detailedDescription: echoesDetailed,
+    detailedDescription: echoesDetailed,
     category: "game",
   },
   {
