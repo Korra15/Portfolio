@@ -17,6 +17,23 @@ export const echoesDetailed = "<ul>" +
   "</li>" +
 "</ul>";
 
+export const DoomScrollerDetailed = "Doom Scroller combines the intensity of endless runners with cooperative platforming strategy:" +
+"<ul>" +
+  "<li><strong>Asymmetrical Co-Op</strong> – Two distinct roles demand teamwork: one player controls the robot escaping danger, while the other manipulates the claw to place platforms and shape the path ahead.</li>" +
+  "<li><strong>Dynamic Platforming</strong> – The claw can grab, move, and rotate platforms in real time, forcing both players to adapt on the fly to survive.</li>" +
+  "<li><strong>Impending Doom</strong> – A relentless alien threat constantly pursues the players, creating urgency and ensuring that every misstep feels critical.</li>" +
+  "<li><strong>Replayability</strong> – Procedural level chunks, varied platform types, and shifting obstacles ensure that no two runs play the same, challenging players to develop rhythm and communication across sessions.</li>" +
+"</ul> \n" +
+"My Contributions as the <b>Gameplay Programmer and Game Designer</b> included " + 
+"<ul>" +
+  "<li> Designing core gameplay mechanics that emphasize cooperation and quick thinking including powerups</li>" +
+  "<li> Implementing the platforming robot player controls, powerup logic using Unity and C# </li>" +
+  "<li> Implementing UI flow and HUD display </li>" +
+  "<li> Playtesting and iterating on level design to balance difficulty and fun </li>" +
+"</ul>";
+
+
+
 export const PeopleAnalyzerDetailed = "<ul>" +
   "<li>Developed ML algorithms for real-time personality assessment</li>" +
   "<li>Implemented reinforcement learning for adaptive conversation scenarios</li>" +

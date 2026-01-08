@@ -5,14 +5,15 @@ import PeopleAnalyzer from "@/public/PeopleAnalyzer.png"
 import GameDoora from "@/public/GameDoora.png";
 import EmbersOath from "@/public/EmbersOath.png";
 import echoes from "@/public/echoes.png";
-import { EmbersOathDetailed, PeopleAnalyzerDetailed, GamedooraDetailed, TimeTestDetailed, echoesDetailed } from "../details/games-detailed";
+import DoomScroller from "@/public/DoomScroller.png";
+import { EmbersOathDetailed, PeopleAnalyzerDetailed, DoomScrollerDetailed, GamedooraDetailed, TimeTestDetailed, echoesDetailed } from "../details/games-detailed";
 import { Project } from "../types";
 
 export const gamesData: Project[] = [
   {
     title: "Ember's Oath - Graduate Capstone Project",
     shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
-    tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++"],
+    tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++", "Jira"],
     imageUrl: EmbersOath,
     videoUrl: "https://youtu.be/2h7qhLl50wY",
     overview:
@@ -29,6 +30,18 @@ export const gamesData: Project[] = [
     overview:
       "It is a Virtually Integrated Project (VIP) that is about making community games that are small, personal and deeply human. They are not about scale or granduer, but about creating small meaningful moments of connection that ripple outwards.",
     detailedDescription: echoesDetailed,
+    category: "game",
+  },
+  {
+    title: "Doom Scroller",
+    shortDescription: "A 2D couch co-op platformer where two robot friends try to survive an alien invasion",
+    tags: ["Unity", "C#", "Jira"],
+    imageUrl: DoomScroller,
+    videoUrl: "https://www.youtube.com/watch?v=FNkagAr5AQU",
+    itchLink: "https://korra15.itch.io/doom-scroller",
+    detailedDescription: DoomScrollerDetailed,
+    overview:
+      "A 2D platformer co-op game where you’re playing as two robot friends at a space station shipping company that suddenly gets overrun by aliens. One player plays as a small robot who platforms around, while another plays as a claw robot who can lift platforms. Solve rapid puzzles and help each other to try and survive from the impending doom as you can!",
     category: "game",
   },
   {

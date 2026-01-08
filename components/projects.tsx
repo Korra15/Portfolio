@@ -149,6 +149,7 @@ export default function Projects() {
                     videoUrl={project.videoUrl}
                     projectLink={project.projectLink}
                     githubLink={project.githubLink}
+                    itchLink={project.itchLink}
                     index={index}
                     overview={project.overview}
                     detailedDescription={project.detailedDescription}
@@ -176,6 +177,7 @@ export default function Projects() {
                     videoUrl={project.videoUrl}
                     projectLink={project.projectLink}
                     githubLink={project.githubLink}
+                    itchLink={project.itchLink}
                     index={index}
                     overview={project.overview}
                     detailedDescription={project.detailedDescription}
@@ -203,6 +205,7 @@ export default function Projects() {
                     videoUrl={project.videoUrl}
                     projectLink={project.projectLink}
                     githubLink={project.githubLink}
+                    itchLink={project.itchLink}
                     index={index}
                     overview={project.overview}
                     detailedDescription={project.detailedDescription}

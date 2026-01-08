@@ -17,9 +17,10 @@ type DetailModalProps = {
     overview: string; // Changed from description
     date?: string; // For experiences
     link?: string; // For experiences
-    projectLink?: string; // For projects - now optional
-    githubLink?: string; // For projects - now optional
-    videoUrl?: string; // For projects - now optional
+    projectLink?: string; // For projects - optional
+    githubLink?: string; // For projects - optional
+    itchLink?: string; // For projects - optional
+    videoUrl?: string; // For projects - optional
     tags?: string[]; // For projects
     imageUrl?: any; // For projects
     detailedDescription?: string;
@@ -193,6 +194,20 @@ export default function DetailModal({ isOpen, onClose, data, type }: DetailModal
                       <FaExternalLinkAlt className="w-4 h-4" />
                     </a>
                   )}
+
+                  {/* Itch link button for projects */}
+                  {isProject && data.itchLink && (
+                    <a
+                      href={data.itchLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg transition-colors"
+                    >
+                      View on Itch
+                      <FaExternalLinkAlt className="w-4 h-4" />
+                    </a>
+                  )}
+
                 </div>
               </div>
             </motion.div>

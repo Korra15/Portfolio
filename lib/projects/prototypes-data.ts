@@ -48,6 +48,7 @@ export const prototypesData: Project[] = [
     tags: ["Unity 2022.3.38f1", "C#", "Trello"],
     imageUrl: WarmingWarning,
     videoUrl: "https://youtu.be/nHZv34L6GhA",
+    itchLink: "https://korra15.itch.io/warming-warning",
     overview:
       "The island is sinking due to rising water levels. Your job as Mayor is to keep your people happy and to protect their homes on the island for as long as possible. During the night, the water rises, and parts of the island will sink. Place houses, recreation centers, and water control facitilities strategically to retain your population, increase happiness, and extend your turns for as long as possible.",
     detailedDescription: WarmingWarningDetailed,
