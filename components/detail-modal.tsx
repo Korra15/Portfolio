@@ -158,7 +158,8 @@ export default function DetailModal({ isOpen, onClose, data, type }: DetailModal
                 {data.detailedDescription && (
                   <div className="mb-8">
                     <h4 className="text-lg font-semibold mb-3 text-gray-900 dark:text-white">
-                      {isProject ? "Key Features & Implementation" : "Key Responsibilities & Achievements"}
+                      {/* {isProject ? "Key Features & Implementation" : "Key Responsibilities & Achievements"} */}
+                      {isProject ? "My Role and Contributions" : "My Responsibilities & Achievements"}
                     </h4>
                     <div 
                       className="modal-content text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line"
