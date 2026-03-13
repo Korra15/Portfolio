@@ -19,14 +19,22 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-4 text-lg">
+        Hi everyone! I’m Ayushi Parikh, someone who believes games are much more than just entertainment, they are powerful tools for evoking emotion and creating meaningful experiences. Currently pursuing my Master’s in Game Development, channelling that passion into crafting engaging player experiences. I love how a small idea can be shaped into something so engrossing and informative, and how a single line of code can turn into something life-changing. 
+      </p>
+        
+      <p className="mb-4 text-lg">
+        I contribute as a game designer, gameplay programmer and UI/UX programmmer. Playing sports namely soccer and karate is what helps keep my brain active, along with traveling and exploring, which help me connect to the world. Rejuvinating with the fresh splash of colours, I enjoy painiting and embrodiery. Blogging about my experiences and adventures is my way of giving back to the community. Escaping reality, fantasy novels are my go to!
+      </p>
+      
+      {/* <p className="mb-4 text-lg">
       I am Ayushi Parikh, a master of <span className="font-bold"> Game Design and Development </span> student at <span className="font-bold"> Rochester Institute of Technology</span>.
       Graduated my bachelor's degree in<span className="font-bold"> Computer science and engineering </span> from <span className="font-bold"> MIT ADT University</span>. 
       Computers have always captivated me, a screen filled with million tiny pixels, hardware understanding 0s and 1s, a device to unlock enormous possibilities. This fascination is what ignited my passion towards {" "} <span className="font-bold"> Games and Artificial intelligence </span>. How a small idea can be shaped into something so engrossing and informative, a single line of code turned into something life-changing. Playing sports namely football, karate is what helps me keep my brain active, alongwith travelling and exploring that help me connect to the world. Rejuvinating with the fresh splash of colours, I enjoy painiting and embrodiery. Blogging about my experiences and adventures is my way of giving back to the community. Escaping reality, fantasy novels are my go to!
-      </p>
+      </p> */}
 
-      <p className="text-lg">
+      {/* <p className="text-lg">
         I am a game enthusiast mesmerized by the enormous potential of guidance these fantasy worlds hold. Being able to create amazing new environments, getting lost in the beauty of these virtual universes is just breathtaking. Games, movies and books teach us a lot of valuable life lessons, leveraging this invaluable wisdom and implementing it in my daily workflow is my conduct. My love and enthusiasm for games is what drives me to dive deeper in this industry and fuels my spirit to create something helpful to all mankind. Having the power to impact lives, guide them towards the good to make this world a better place is a golden opportunity that I would not like to miss.
-      </p>
+      </p> */}
     </motion.section>
   );
 }
