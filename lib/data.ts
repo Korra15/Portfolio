@@ -48,11 +48,11 @@ export const skillsData = [
   "Tailwind",
   "React",
   "Next.js",
-  "Vue.js",
   "Git",
   "Linux",
-  "AWS",
-  "Google Cloud",
+  "Perforce",
+  // "AWS",
+  // "Google Cloud",
   "Figma",
 ] as const;
 
