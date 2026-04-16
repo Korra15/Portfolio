@@ -15,7 +15,8 @@ export const gamesData: Project[] = [
     shortDescription: "3rd Person Action Adventure RPG set in a fantasy world",
     tags: ["Gameplay Programmer", "UI Programmer", "Unreal Engine 5.6", "C++", "Jira"],
     imageUrl: EmbersOath,
-    videoUrl: "https://youtu.be/2h7qhLl50wY",
+    videoUrl: "https://youtu.be/SarvTH8NWGY",
+    projectLink: "https://sites.google.com/view/foolswithblades/embers-oath?authuser=0",
     overview:
       "In a dark fantasy world where magic is nearly extinct, Ember, a fire mage who can transform into a phoenix, must reclaim lost knowledge and confront a tyrant determined to erase magic forever.",
     detailedDescription: EmbersOathDetailed,
