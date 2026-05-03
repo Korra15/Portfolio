@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
 import { GoMail } from "react-icons/go";
-import { HiDownload } from "react-icons/hi";
+import { FiLink } from "react-icons/fi";
 import { FaGithubSquare, FaBlogger, FaGamepad  } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -74,12 +74,13 @@ export default function Intro() {
       >
         <div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'>
           <a
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-[1.045] hover:scale-[1.045] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 hover:bg-gray-950 "
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-[1.02] hover:scale-[1.02] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 hover:bg-gray-950"
             href="/AyushiParikh_Resume.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Download Resume{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            View Resume{" "}
+            <FiLink className="opacity-60 group-hover:opacity-100 transition" />
           </a>
 
           <a
